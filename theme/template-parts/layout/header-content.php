@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying the header content
  *
@@ -9,31 +10,13 @@
 
 ?>
 
-<header id="masthead">
-
-	<div>
-		<?php
-		if ( is_front_page() ) :
-			?>
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<?php
-		else :
-			?>
-			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-		endif;
-
-		$umbrella_description = get_bloginfo( 'description', 'display' );
-		if ( $umbrella_description || is_customize_preview() ) :
-			?>
-			<p><?php echo $umbrella_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-		<?php endif; ?>
-	</div>
-
-	<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'umbrella' ); ?>">
-		<button aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'umbrella' ); ?></button>
-
-		<?php
+<header class="absolute w-full" id="masthead">
+	<nav class="container flex justify-between items-center py-10" id="site-navigation" aria-label="<?php esc_attr_e('Main Navigation', 'umbrella'); ?>">
+		<img class="h-20" src="<?= get_template_directory_uri() . '/assets/img/logo-header.svg' ?>" alt="">
+		<button aria-controls="primary-menu" aria-expanded="false"><img class="h-14" src="<?= get_template_directory_uri() . '/assets/img/menu-icon.svg' ?>" alt=""></button>
+	</nav><!-- #site-navigation -->
+	<div class="hidden">
+	<?php
 		wp_nav_menu(
 			array(
 				'theme_location' => 'menu-1',
@@ -42,6 +25,5 @@
 			)
 		);
 		?>
-	</nav><!-- #site-navigation -->
-
+	</div>
 </header><!-- #masthead -->

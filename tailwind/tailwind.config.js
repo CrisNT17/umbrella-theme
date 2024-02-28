@@ -13,9 +13,28 @@ module.exports = {
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {
-			size:{
-				'128':'32rem',
-			}
+			screens: {
+				xs: '320px',
+				sm: '425px',
+				md: '768px',
+				lg: '1024px',
+				xl: '1440px',
+			},
+			container: {
+				center: true,
+				padding: {
+					DEFAULT: '1rem',
+					sm: '2rem',
+					md: '3rem',
+					lg: '4rem',
+					xl: '5rem',
+				},
+			},
+			colors: {
+				'sky-blue': '#64D4DD',
+				'gray': '#606060',
+				'light-gray': '#B3B3B3',
+			},
 		},
 	},
 	corePlugins: {
