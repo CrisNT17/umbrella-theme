@@ -36,26 +36,27 @@ get_header();
 <!-- Why choosen -->
 <section class="bg-auto bg-white  flex items-center justify-center h-screen">
 	<div>
-		<h2 class="text-[40px] text-sky-blue font-black flex text-center"> ¿POR QUÉ ELEGIRNOS?</h2>
+		<h2 class="text-[40px] text-sky-blue font-black  text-center"> ¿POR QUÉ ELEGIRNOS?</h2>
 		<div style="image-rendering: url('');"></div>
-		<div class="grid grid-cols-3 gap-3">
-			<div class="bg-auto bg-start flex justify-end items-center h-48" style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/catrin-johnson-ym96FAhQ8o4-unsplash-scaled.jpg');">
+		<div class=" container flex justify-evenly gap-40">
+
+
+
+			<div class="flex flex-col justify-center  items-center">
+				<img class="size-36" src="http://umbrella.local/wp-content/uploads/2024/02/Vector.svg" alt="">
+				<h2 class="text-8xl  text-sky-blue font-black flex text-center"> +200 </h2>
+				<span class="font-normal text-4xl text-sky-blue text-center">CLIENTES</span>
 			</div>
-			<div class="bg-auto bg-start flex justify-end items-center h-48" style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/catrin-johnson-ym96FAhQ8o4-unsplash-scaled.jpg');">
+			<div class="flex flex-col justify-center  items-center">
+			<img class ="size-36" src="http://umbrella.local/wp-content/uploads/2024/02/Vector-2.svg" alt="">
+			<h2 class="text-8xl  text-gray font-black flex text-center"> +250 </h2>
+				<span class="font-normal text-4xl text-gray-400 text-center">PROYECTOS</span>
 			</div>
-			<div class="bg-auto bg-start flex justify-end items-center h-48" style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/catrin-johnson-ym96FAhQ8o4-unsplash-scaled.jpg');">
-			</div>
-			<div>
-				<h2 class="text-[40px] text-sky-blue font-black flex text-center"> +200 </h2>
-				<span class="font-normal text-[30px] text-sky-blue text-center">CLIENTES</span>
-			</div>
-			<div>
-				<h2 class="text-[40px] text-gray-400 font-black flex text-center"> +250 </h2>
-				<span class="font-normal text-[30px] text-gray-400 text-center">PROYECTOS</span>
-			</div>
-			<div>
-				<h2 class="text-[40px] text-sky-blue font-black flex text-center"> +25 </h2>
-				<span class="font-normal text-[30px] text-sky-blue text-center">AÑOS</span>
+			<div class="flex flex-col justify-center  items-center">
+				<img class="size-36" src="http://umbrella.local/wp-content/uploads/2024/02/Vector-3.svg" alt="">
+
+				<h2 class="text-8xl  text-sky-blue font-black flex text-center"> +25 </h2>
+				<span class="font-normal text-4xl text-sky-blue text-center">AÑOS</span>
 			</div>
 		</div>
 	</div>

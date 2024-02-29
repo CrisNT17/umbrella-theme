@@ -19,6 +19,6 @@ get_header();
 // Banner
 get_template_part('template-parts/banners/internal', 'page');
 ?>
-
+<h3 class="text-5xl">nkjnkjnkjnkjnkjnk</h3>
 <?php
 get_footer();
