@@ -23,8 +23,8 @@ get_header();
 <!-- Testimoniales -->
 <section class="w-full h-[50rem] bg-auto bg-white  flex items-start justify-center">
 	<div class="container ">
-		<h2 class="text-[40px] text-sky-blue font-black  text-center"> TESTIMONIALES</h2>
-
+		<h2 class="text-[40px] text-sky-blue font-bold  text-center mt-10"> Testimoniales</h2>
+		<div class=" flex justify-center"> <hr class="bg-sky-blue rounded-md h-1 w-24 -mt-1 mb-8 ">  </div>
 		<div class=" container flex justify-strech gap-40">
 
 			<div class="slider grid grid-cols-1 grid-rows-1 gap-5 overflow-hidden relative">
@@ -48,16 +48,26 @@ get_header();
   			<button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-4xl">></button>
 
 			<h2 class="text-center text-3xl leading-snug mt-16">El profesionalismo de UMBRELLA SOLUTION'S es de calidad <br> internacional. Trabajan con los mejores materiales y la <br> disposición de su equipo para cualquier proyecto se refleja en <br> los resultados finales. ¡Superan expectativas!</h2>
-			<h2 class="text-center  text-3xl text-black leading-snug">Anthony Almeida, VETERINO</h2>
+			<h2 class="text-center  text-3xl text-black leading-snug mt-5">Anthony Almeida, VETERINO</h2>
 	</div>
 
 
 </section>
 
-<section class="w-full h-[50rem] bg-auto bg-white  flex items-end justify-center">
+<section class="w-full h-[62rem] bg-auto bg-white  flex items-end justify-center">
+
 	<div class="container">
-		<div class="flex items-center justify-center">
+
+		<div class="flex items-center justify-center relative">
+
 			<img class="size-36" src="http://umbrella.local/wp-content/uploads/2024/02/g3924.svg" alt="">
+			<!-- Bullets -->
+	<div class="absolute top-0  -mt-28 mb-4 mr-4"style="z-index: 10 ">
+  	<span class="bg-sky-blue rounded-full w-4 h-4 inline-block mr-14 hover:bg-white focus:ring focus:bg-sky-blue"></span>
+    	<span class="bg-sky-blue rounded-full w-4 h-4 inline-block mr-14"></span>
+  	<span class="bg-sky-blue rounded-full w-4 h-4 inline-block mr-14"></span>
+   	 <span class="bg-sky-blue rounded-full w-4 h-4 inline-block "></span>
+  </div>
 
 			<h2 class="text-8xl font-black leading-none">
 				<span class="text-sky-blue">P<span class="text-light-gray">remios</span>

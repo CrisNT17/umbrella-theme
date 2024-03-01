@@ -19,7 +19,7 @@ get_header();
 // Banner
 get_template_part('template-parts/banners/internal', 'page');
 ?>
-<section class="w-full h-auto flex items-center justify-center">
+<section class="w-full h-auto flex items-center justify-start">
 
 <div class="container ml-0 mr-1 pl-0 pr-0">
 	<!-- Publicidad Aérea -->
@@ -38,11 +38,14 @@ get_template_part('template-parts/banners/internal', 'page');
   			</div>
 				<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
 		</div>
-		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end ">
-			Publicidad <br><span class="text-7xl font-bold">Aér<u>ea</u></span>
+
+		<div class="mx-auto ">
+			<h2 class=" text-5xl text-sky-blue text-end">
+			Publicidad <br><span class="text-7xl font-bold">Aérea</span>
 
 			</h2>
+			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
+
 			<h2 class="text-end text-2xl mt-4">
 			Donde todo el mundo te ve.
 			</h2>
@@ -55,9 +58,10 @@ get_template_part('template-parts/banners/internal', 'page');
 
 		<div class="mx-auto">
 			<h2 class=" text-5xl text-sky-blue text-end ">
-				Comunicación <br><span class="text-7xl font-bold">Integr<u class="mt-4">al</u></span>
+				Comunicación <br><span class="text-7xl font-bold">Integral</span>
 
 			</h2>
+			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
 			<h2 class="text-end text-2xl mt-4">
 			La imagen de tu marca <br> habla por sí sola. <br>Branding <br>Packaging <br>Logo (Proceso creativo)
 
@@ -97,9 +101,10 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 		<div class="mx-auto">
 			<h2 class=" text-5xl text-sky-blue text-end">
-			Publicidad <br><span class="text-7xl font-bold">B<u>TL</u></span>
+			Publicidad <br><span class="text-7xl font-bold">BTL</span>
 
 			</h2>
+					<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
 			<h2 class="text-end text-2xl mt-4">
 			Donde todo el mundo te ve.
 			</h2>
@@ -112,9 +117,10 @@ get_template_part('template-parts/banners/internal', 'page');
 
 		<div class="mx-auto">
 			<h2 class=" text-5xl text-sky-blue text-end">
-			Diseño y construcción de <br><span class="text-7xl font-bold">Stan<u>ds</u></span>
+			Diseño y construcción de <br><span class="text-7xl font-bold">Stands</span>
 
 			</h2>
+			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
 			<h2 class="text-end text-2xl mt-4">
 			Creatividad y estrategia para <br> posicionamiento de tu marca en ferias,<br> exposiciones, eventos, centros<br> comerciales... <br> ¡Y más!
 
@@ -149,9 +155,10 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 		<div class="mx-auto">
 			<h2 class=" text-5xl text-sky-blue text-end">
-			Rotulación <br><span class="text-7xl font-bold">Publicitar<u>ia</u></span>
+			Rotulación <br><span class="text-7xl font-bold">Publicitaria</span>
 
 			</h2>
+			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
 			<h2 class="text-end text-2xl mt-4">
 			La fuerza de tu marca en <br>exteriores e interiores
 
@@ -165,9 +172,10 @@ get_template_part('template-parts/banners/internal', 'page');
 
 		<div class="mx-auto">
 			<h2 class=" text-5xl text-sky-blue text-end">
-			Comunicación <br><span class="text-7xl font-bold">Digit<u>al</u></span>
+			Comunicación <br><span class="text-7xl font-bold">Digital</span>
 
 			</h2>
+			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
 			<h2 class="text-end text-2xl mt-4">
 
 			Conversación y conexión digital entre tu <br> marca y tus clientes. <br> RRSS • Desarrollo web • CRM <br>Pauta digital (FB, IG, Google, YT
@@ -205,9 +213,10 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 		<div class="mx-auto">
 			<h2 class=" text-5xl text-sky-blue text-end">
-			Diseño <br><span class="text-7xl font-bold">Interi<u>or</u></span>
+			Diseño <br><span class="text-7xl font-bold">Interior</span>
 
 			</h2>
+			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
 			<h2 class="text-end text-2xl mt-4">
 			Diseño interior para autoservicios, <br> farmacias, locales y presencia en <br>percha. (videos)
 			</h2>
