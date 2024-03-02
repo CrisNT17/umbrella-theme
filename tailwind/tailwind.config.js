@@ -13,6 +13,11 @@ module.exports = {
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {
+			fontFamily: {
+				'cocogoose': ['CocoGooseProLight', 'CocoGooseProRegular', 'CocoGooseProSemilight', 'sans'],
+				'museo': ['MuseoSans300', 'MuseoSans500', 'MuseoSans700', 'MuseoSans900', 'sans'],
+				'myriadopro': ['MyriadProRegular', 'sans'],
+			 },
 			screens: {
 				xs: '320px',
 				sm: '425px',

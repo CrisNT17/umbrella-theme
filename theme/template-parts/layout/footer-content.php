@@ -9,6 +9,6 @@
 
 ?>
 
-<footer class="bg-sky-blue p-10" id="colophon">
+<footer class="bg-sky-blue p-10 mt-5" id="colophon">
 	<img class="h-28 mx-auto" src="<?= get_template_directory_uri().'/assets/img/logo-umbrella.svg' ?>" alt="">
 </footer><!-- #colophon -->

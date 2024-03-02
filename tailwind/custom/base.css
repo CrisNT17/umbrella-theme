@@ -14,3 +14,12 @@
 body {
 	@apply bg-background text-light-gray;
 }
+
+.menu-item {
+	@apply text-gray text-lg hover:text-sky-blue;
+}
+
+
+.current-menu-item {
+	@apply text-sky-blue;
+}
