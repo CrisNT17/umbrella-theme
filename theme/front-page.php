@@ -11,6 +11,14 @@
 
 //  Menu
 get_header();
+
+// Slider
+$sliderHome = array(
+	"banner1" => get_template_directory_uri().'/assets/img/banners/banner-home-1.jpg',
+	"banner2" => get_template_directory_uri().'/assets/img/banners/banner-home-2.jpg',
+	"banner3" => get_template_directory_uri().'/assets/img/banners/banner-home-3.jpg',
+);
+get_template_part( 'template-parts/sliders/home', 'page', array('banners' => $sliderHome) );
 ?>
 <!-- Slider -->
 <section class="w-full h-[48rem] flex justify-start items-end bg-cover bg-no-repeat bg-center" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/banner-home.jpg' ?>');">
