@@ -87,11 +87,11 @@ get_header();
 </section>
 
 <!-- Projects -->
-<section class=" w-full h-[48rem] bg-cover bg-center " style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/white-concrete-wall-5-scaled.jpg');">
-	<div class="container w-full h-full flex justify-center items-center relative ">
+<section class=" w-full h-[55rem] bg-cover bg-center " style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/white-concrete-wall-5-scaled.jpg');">
+	<div class="container w-full h-full  relative translate-y-10">
 
-	<div class="w-full border-r-4 border-sky-blue ">
-	<div class=" w-full h-5/6 grid grid-cols-4 grid-rows-2 gap-3 mt-10  ">
+	<div class="w-full  border-r-4 border-sky-blue relative mt-10 flex items-end ">
+		<div class=" w-[90%] h-full grid grid-cols-4 grid-rows-2 gap-3   ">
 			<div class="col-span-2 row-span-2">
 				<img class="w-full h-full" src="http://umbrella.local/wp-content/uploads/2024/02/244253804_1913345092171178_377135258163533003_n.jpeg" alt="Imagen 1" class="w-full h-full object-cover">
 			</div>
@@ -109,11 +109,8 @@ get_header();
 
 
 		</div>
-		<div class="relative w-24 flex justify-end items-end ">
+		<span class="block text-4xl text-sky-blue -rotate-90  font-black text-[60px] uppercase w-20 -translate-y-6 translate-x-8">proyectos</span>
 
-					<span class="block text-4xl text-sky-blue -rotate-90 translate-y-40 translate-x-32 font-black text-[60px] uppercase">proyectos</span>
-
-			</div>
 	</div>
 
 	</div>
