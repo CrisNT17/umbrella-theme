@@ -25,3 +25,105 @@ const homeSlider = new Swiper('.home-slider', {
 })
 
 window.initializeCarousel = homeSlider;
+
+
+const servicespaSlider = new Swiper('.servicespa-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+window.initializeCarousel = servicespaSlider;
+
+
+
+const servicesciSlider = new Swiper('.servicesci-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+window.initializeCarousel = servicesciSlider;
+
+
+
+const servicespbtlSlider = new Swiper('.servicespbtl-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+window.initializeCarousel = servicespbtlSlider;
+
+const servicesrpSlider = new Swiper('.servicesrp-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+window.initializeCarousel = servicesrpSlider;
+
+const servicescdSlider = new Swiper('.servicescd-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+window.initializeCarousel = servicescdSlider;
+
+
+const servicesdiSlider = new Swiper('.servicesdi-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+window.initializeCarousel = servicesdiSlider;

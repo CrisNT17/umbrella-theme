@@ -30,12 +30,12 @@ get_template_part('template-parts/banners/internal', 'page');
 		<div class="slider overflow-hidden relative md:w-3/5 sm:w-full">
 
 		<?php
-		$sliderServicepa = array(
-			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
-			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+		$sliderServicespa = array(
+			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-nosotros.jpg',
+			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-portafolio.jpg',
 			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
 		);
-		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicepa));
+		get_template_part('template-parts/sliders/services-pa', 'page', array('banners' => $sliderServicespa));
 
 		?>
 
@@ -81,12 +81,12 @@ get_template_part('template-parts/banners/internal', 'page');
 		<div class="slider overflow-hidden relative md:w-1/2 sm:w-full">
 
 			<?php
-			$sliderServiceci = array(
-				"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			$sliderServicesci = array(
+				"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-servicios.jpg',
 				"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
 				"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
 			);
-			get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServiceci));
+			get_template_part('template-parts/sliders/services-ci', 'page', array('banners' => $sliderServicesci));
 
 			?>
 						<!-- Bullets -->
@@ -106,14 +106,14 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center mt-8 sm:flex-col md:flex-row">
 
 		<div class="h-[34rem]  overflow-hidden slider relative md:w-3/5 sm:w-full">
-			
+
 			<?php
-		$sliderServicepbtl = array(
+		$sliderServicespbtl = array(
 			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
 			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
 			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
 		);
-		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicepbtl));
+		get_template_part('template-parts/sliders/services-pbtl', 'page', array('banners' => $sliderServicespbtl));
 
 		?>
 						<!-- Bullets -->
@@ -172,11 +172,11 @@ get_template_part('template-parts/banners/internal', 'page');
 
 			<?php
 		$sliderServicerp = array(
-			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			"banner1" => get_template_directory_uri() . '',
 			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
 			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
 		);
-		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicerp));
+		get_template_part('template-parts/sliders/services-rp', 'page', array('banners' => $sliderServicerp));
 
 		?>
 
@@ -227,7 +227,7 @@ get_template_part('template-parts/banners/internal', 'page');
 			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
 			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
 		);
-		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicecd));
+		get_template_part('template-parts/sliders/services-cd', 'page', array('banners' => $sliderServicecd));
 
 		?>
 
@@ -252,7 +252,7 @@ get_template_part('template-parts/banners/internal', 'page');
 			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
 			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
 		);
-		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicedi));
+		get_template_part('template-parts/sliders/services-di', 'page', array('banners' => $sliderServicedi));
 
 		?>
 

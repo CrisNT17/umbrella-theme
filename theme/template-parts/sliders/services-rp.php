@@ -9,7 +9,7 @@
  */
 
 ?>
-<div class="servicerp-slider overflow-hidden h-[50rem] relative">
+<div class="servicesrp-slider overflow-hidden h-[50rem] relative">
 	<div class="swiper-wrapper">
 		<!-- Slides -->
 		<?php
@@ -21,7 +21,7 @@
 			</figure>
 		<?php endforeach; ?>
 	</div>
-	<div class="z-40 absolute bottom-10 left-1/2 transform -translate-x-1/2 flex justify-center items-center gap-3">
+	<div class="z-40 absolute bottom-10 left-1/2 transform -translate-x-1/2 flex justify-end items-center gap-3">
 		<button class="bg-sky-blue/70 size-3 rounded-full"></button>
 		<button class="bg-light-gray/70 size-3 rounded-full"></button>
 		<button class="bg-light-gray/70 size-3 rounded-full"></button>

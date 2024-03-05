@@ -9,7 +9,7 @@
  */
 
 ?>
-<div class="serviceci-slider overflow-hidden h-[50rem] relative">
+<div class="servicesci-slider overflow-hidden h-[50rem] relative">
 	<div class="swiper-wrapper">
 		<!-- Slides -->
 		<?php
