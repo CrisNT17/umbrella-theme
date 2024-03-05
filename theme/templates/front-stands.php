@@ -38,9 +38,9 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 	</div>
 	<div class="grid md:grid-cols-5 grid-cols-1 gap-x-10 gap-y-5 place-content-center my-10">
-		<div class="col-span-3"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt=""></div>
-		<div class="col-span-2 row-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-2.jpg' ?>"></div>
-		<div class="col-span-3"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt=""></div>
+		<div class="col-span-3"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '' ?>" alt=""></div>
+		<div class="col-span-2 row-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '' ?>"></div>
+		<div class="col-span-3"><img class="w-full h-full object-cover object-center " src="<?= get_template_directory_uri() . '' ?>" alt=""></div>
 	</div>
 	<!-- Stand Pan -->
 	<div class="grid md:grid-cols-2 grid-cols-1 place-content-center">
@@ -62,8 +62,8 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 	</div>
 	<div class="grid md:grid-cols-10 grid-cols-1 gap-5 place-content-center">
-		<div class="col-span-6 row-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt=""></div>
-		<div class="col-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>"></div>
+		<div class="col-span-6 row-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '' ?>" alt=""></div>
+		<div class="col-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '' ?>"></div>
 		<div class="col-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt=""></div>
 		<div class="col-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>"></div>
 		<div class="col-span-2"><img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt=""></div>
@@ -72,11 +72,11 @@ get_template_part('template-parts/banners/internal', 'page');
 		<h3 class="text-sky-blue text-center md:text-6xl text-2xl lg:mb-28 md:mb-20 mb-10  font-cocogoose font-extralight">Nuestros clientes</h3>
 		<div class="grid md:grid-cols-2 grid-cols-1 gap-6 place-content-center">
 			<div class="flex flex-col justify-center items-center gap-5">
-				<img class="w-full" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt="">
+				<img class="w-full h-72" src="<?= get_template_directory_uri() . '' ?>" alt="">
 				<span class="text-sky-blue lg:text-5xl text-xl font-cocogoose font-extralight">Propuesta</span>
 			</div>
 			<div class="flex flex-col justify-center items-center gap-5">
-				<img class="w-full" src="<?= get_template_directory_uri() . '/assets/img/stand-1.jpg' ?>" alt="">
+				<img class="w-full h-72" src="<?= get_template_directory_uri() . '' ?>" alt="">
 				<span class="text-sky-blue lg:text-5xl text-xl font-cocogoose font-extralight">Creación</span>
 			</div>
 		</div>

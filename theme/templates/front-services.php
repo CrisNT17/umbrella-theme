@@ -51,7 +51,7 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 
 		<div class="mx-auto sm: ">
-			<h2 class=" text-5xl text-sky-blue text-end">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 			Publicidad <br><span class="text-7xl font-bold">Aérea</span>
 
 			</h2>
@@ -68,7 +68,7 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center mt-8 sm:flex-col-reverse md:flex-row ">
 
 		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end ">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 				Comunicación <br><span class="text-7xl font-bold">Integral</span>
 
 			</h2>
@@ -127,7 +127,7 @@ get_template_part('template-parts/banners/internal', 'page');
 			<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
 		</div>
 		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 			Publicidad <br><span class="text-7xl font-bold">BTL</span>
 
 			</h2>
@@ -143,7 +143,7 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center  mt-8 sm:flex-col-reverse md:flex-row">
 
 		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 			Diseño y construcción de <br><span class="text-7xl font-bold">Stands</span>
 
 			</h2>
@@ -191,7 +191,7 @@ get_template_part('template-parts/banners/internal', 'page');
 			<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
 		</div>
 		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 			Rotulación <br><span class="text-7xl font-bold">Publicitaria</span>
 
 			</h2>
@@ -208,7 +208,7 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center  mt-8 sm:flex-col-reverse md:flex-row">
 
 		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 			Comunicación <br><span class="text-7xl font-bold">Digital</span>
 
 			</h2>
@@ -267,7 +267,7 @@ get_template_part('template-parts/banners/internal', 'page');
 			<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
 		</div>
 		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end">
+			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
 			Diseño <br><span class="text-7xl font-bold">Interior</span>
 
 			</h2>

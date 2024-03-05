@@ -23,7 +23,7 @@ get_header();
 <!-- Testimoniales -->
 <section class="w-full md:h-[65rem] sm:h-[60rem] bg-auto bg-white  flex items-start justify-center">
 	<div class="container  sm:w-full sm:p-0 md:p-20">
-		<h2 class="text-[40px] text-sky-blue font-bold  text-center md:mt-10 sm:mt-4"> Testimoniales</h2>
+		<h2 class="text-[40px] text-sky-blue font-bold  text-center md:mt-10 sm:mt-4 font-cocogoose"> Testimoniales</h2>
 		<div class=" flex justify-center"> <hr class="bg-sky-blue rounded-md h-1 w-24 md:-mt-1 md:mb-8 sm:mt-4 sm:mb-8 ">  </div>
 		<div class=" container flex justify-center gap-40  mx-0 border-x-0 p-0">
 
@@ -69,7 +69,7 @@ get_header();
    	 <span class="bg-sky-blue rounded-full w-4 h-4 inline-block "></span>
   </div>
 
-			<h2 class="md:text-8xl sm:text-6xl font-black leading-none">
+			<h2 class="md:text-8xl sm:text-6xl font-black leading-none font-cocogoose">
 				<span class="text-sky-blue">P<span class="text-light-gray">remios</span>
 			</h2>
 
