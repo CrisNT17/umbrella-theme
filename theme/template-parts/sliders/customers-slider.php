@@ -20,6 +20,15 @@
 				<div class="swiper-slide">
 					<!-- <img class="w-full h-full object-cover object-center" src="<?= $image_data['url']; ?>" srcset="<?= $image_data['srcset']; ?>" alt="<?= $image_data['name'] ?>"> -->
 					<img class="max-h-20" src="<?= $banner['image']; ?>" alt="">
+					<!-- Bullets -->
+					<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10;">
+						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
+						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
+						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
+						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
+						<span class="bg-white rounded-full size-2 inline-block mr-2"></span>
+					</div>
+					<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
 				</div>
 			<?php endforeach; ?>
 		</div>

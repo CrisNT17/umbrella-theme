@@ -54,26 +54,63 @@ get_template_part('template-parts/sliders/home', 'page', array('banners' => $sli
 				<div class="xl:size-36 lg:size-28 md:size-20 size-20">
 					<img class="h-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/icons/customers-icon.svg' ?>" alt="">
 				</div>
-				<h2 class="xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 text-sky-blue font-museo font-black flex text-center"> +200 </h2>
+				<h2 class="counter-item xl:w-60 lg:w-48 md:w-48 w-full mx-auto xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 text-sky-blue font-museo font-black text-center" data-count="200"> +0 </h2>
 				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl text-sky-blue font-museo font-medium text-center uppercase">CLIENTES</span>
 			</div>
 			<div class="flex flex-col justify-center items-center">
 				<div class="xl:size-36 lg:size-28 md:size-20 size-20">
 					<img class="h-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/icons/projects-icon.svg' ?>" alt="">
 				</div>
-				<h2 class="xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 font-museo font-black flex text-center">+250 </h2>
+				<h2 class="counter-item xl:w-60 lg:w-48 md:w-48 w-full mx-auto xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 font-museo font-black text-center" data-count="250">+0 </h2>
 				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl text-gray-400 font-museo font-medium text-center uppercase">PROYECTOS</span>
 			</div>
 			<div class="flex flex-col justify-center  items-center">
 				<div class="xl:size-36 lg:size-28 md:size-20 size-20">
 					<img class="h-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/icons/years-icon.svg' ?>" alt="">
 				</div>
-				<h2 class="xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 text-sky-blue font-museo font-black flex text-center"> +25 </h2>
+				<h2 class="counter-item xl:w-60 lg:w-48 md:w-48 w-full mx-auto xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 text-sky-blue font-museo font-black text-center" data-count="25"> +0 </h2>
 				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl text-sky-blue font-museo font-medium text-center uppercase">AÑOS</span>
 			</div>
 		</div>
 	</div>
 </section>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const counters = document.querySelectorAll('.counter-item');
+		const options = {
+			threshold: 0.5,
+		};
+
+		const observer = new IntersectionObserver(function(entries, observer) {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					startCounter(entry.target);
+					observer.unobserve(entry.target);
+				}
+			});
+		}, options);
+
+		counters.forEach(counter => {
+			observer.observe(counter);
+		});
+
+		function startCounter(counterElement) {
+			const targetCount = parseInt(counterElement.getAttribute('data-count'));
+			let currentCount = 0;
+
+			const interval = setInterval(function() {
+				counterElement.innerText = `+${currentCount}`;
+				currentCount++;
+
+				if (currentCount > targetCount) {
+					clearInterval(interval);
+					counterElement.innerText = `+${targetCount}`;
+				}
+			}, 30);
+		}
+	});
+</script>
+
 
 <!-- Team -->
 <section class="xl:h-[850px] lg:h-[650px] md:h-[550px] h-[400px] bg-cover bg-no-repeat bg-center overflow-auto" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/banners/cta-nosotros.jpg' ?>');">
@@ -128,25 +165,27 @@ get_template_part('template-parts/sliders/customers', 'slider', array('banners' 
 ?>
 <!-- Projects -->
 <section class="w-full overflow-hidden xl:py-20 py-10 bg-cover bg-center" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/backgrounds/bg-proyectos.jpg' ?>');">
-	<div class="container border-r-2 flex md:flex-row flex-col md:justify-between justify-center items-center">
-		<span class="text-3xl font-cocogoose text-sky-blue uppercase text-center mb-10">Proyectos</span>
-		<div class="grid md:grid-cols-4 grid-cols-3 md:gap-3 gap-1">
-			<div class="md:col-span-2 md:row-span-2 col-span-3">
-				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-1.jpg' ?>" alt="Imagen 1">
+	<div class="container">
+		<div class="flex md:flex-row flex-col md:justify-between justify-center items-end md:border-r-2 border-sky-blue">
+			<span class="text-3xl font-cocogoose text-sky-blue uppercase text-center mb-10 md:hidden block mx-auto">Proyectos</span>
+			<div class="grid md:grid-cols-4 grid-cols-3 md:gap-3 gap-1">
+				<div class="md:col-span-2 md:row-span-2 col-span-3">
+					<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-1.jpg' ?>" alt="Imagen 1">
+				</div>
+				<div class="col-span-1 md:h-auto h-32">
+					<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-2.jpg' ?>" alt="Imagen 2">
+				</div>
+				<div class="col-span-1 md:h-auto h-32">
+					<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-3.jpg' ?>" alt="Imagen 3">
+				</div>
+				<div class="relative md:col-span-2 col-span-1 md:h-auto h-32">
+					<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-4.jpg' ?>" alt="Imagen 4">
+					<button class="font-cocogoose text-xs font-extralight absolute md:bottom-5 right-5 bottom-1 border-white border-2 rounded-3xl text-white px-3 py-2 md:block hidden">Ver más... </button>
+				</div>
 			</div>
-			<div class="col-span-1 md:h-auto h-32">
-				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-2.jpg' ?>" alt="Imagen 2">
+			<div class="md:block hidden relative xl:w-24 lg:w-20 w-20 text-end">
+				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-cocogoose text-sky-blue align-bottom uppercase -rotate-90 origin-left absolute top-0 bottom-0">proyectos</span>
 			</div>
-			<div class="col-span-1 md:h-auto h-32">
-				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-3.jpg' ?>" alt="Imagen 3">
-			</div>
-			<div class="relative md:col-span-2 col-span-1 md:h-auto h-32">
-				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-4.jpg' ?>" alt="Imagen 4">
-				<button class="font-cocogoose text-xs font-extralight absolute md:bottom-5 right-5 bottom-1 border-white border-2 rounded-3xl text-white px-3 py-2 md:block hidden">Ver más... </button>
-			</div>
-		</div>
-		<div class="md:flex flex-col justify-center items-center hidden">
-			<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-cocogoose text-sky-blue transform -rotate-90 origin-bottom right-4 uppercase">proyectos</span>
 		</div>
 	</div>
 </section>
