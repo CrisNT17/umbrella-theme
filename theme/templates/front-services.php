@@ -19,67 +19,6 @@ get_header();
 // Banner
 get_template_part('template-parts/banners/internal', 'page');
 ?>
-<section class="w-full h-auto flex items-center justify-center">
-
-<div class="md:container md:mx-auto  ">
-
-<div class="container pl-0 pr-0 ">
-	<!-- Publicidad Aérea -->
-	<div class="flex items-center mt-10  sm:flex-col md:flex-row ">
-
-		<div class="slider overflow-hidden relative md:w-3/5 sm:w-full">
-
-		<?php
-		$sliderServicespa = array(
-			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-nosotros.jpg',
-			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-portafolio.jpg',
-			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
-		);
-		get_template_part('template-parts/sliders/services-pa', 'page', array('banners' => $sliderServicespa));
-
-		?>
-
-			<!-- Bullets -->
-  			<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10;">
-  				<span class="bg-white rounded-full w-2 h-2 inline-block mr-3"></span>
-    				<span class="bg-white rounded-full w-2 h-2 inline-block mr-3"></span>
-  				<span class="bg-white rounded-full w-2 h-2 inline-block mr-3"></span>
-   	 			<span class="bg-white rounded-full w-2 h-2 inline-block mr-3"></span>
-   	 			<span class="bg-white rounded-full w-2 h-2 inline-block mr-2"></span>
-  			</div>
-				<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
-		</div>
-
-		<div class="mx-auto sm: ">
-			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
-			Publicidad <br><span class="text-7xl font-bold">Aérea</span>
-
-			</h2>
-			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
-
-			<h2 class="text-end text-2xl mt-4">
-			Donde todo el mundo te ve.
-			</h2>
-		</div>
-
-
-	</div>
-	<!-- comunicación integral -->
-	<div class="flex items-center mt-8 sm:flex-col-reverse md:flex-row ">
-
-		<div class="mx-auto">
-			<h2 class=" text-5xl text-sky-blue text-end font-cocogoose">
-				Comunicación <br><span class="text-7xl font-bold">Integral</span>
-
-			</h2>
-			<div class=" flex justify-end"> <hr class="bg-sky-blue rounded-md h-2 w-20 mb-3 ">  </div>
-			<h2 class="text-end text-2xl mt-4">
-			La imagen de tu marca <br> habla por sí sola. <br>Branding <br>Packaging <br>Logo (Proceso creativo)
-
-			</h2>
-		</div>
-		<div class="slider overflow-hidden relative md:w-1/2 sm:w-full">
-
 <section class="lg:my-20 my-10 space-y-10">
 	<!-- Publicidad aérea -->
 	<div class="grid md:grid-cols-11 grid-cols-1">

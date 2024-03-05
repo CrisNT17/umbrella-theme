@@ -19,11 +19,9 @@ get_header();
 get_template_part('template-parts/banners/internal', 'page');
 ?>
 <div class="container font-cocogoose font-light text-center xl:text-5xl lg:text-4xl md:text-3xl text-xl md:py-20 py-10">
-<<<<<<< HEAD
-	<h2 class="text-sky-blue">Ninguno de nosotros es tan bueno <br> <p class="text-light-gray">como todos nosotros juntos.</p></h2>
-=======
-	<p>Ninguno de nosotros es tan bueno <br> como todos nosotros juntos.</p>
->>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
+	<h2 class="text-sky-blue">Ninguno de nosotros es tan bueno <br>
+		<p class="text-light-gray">como todos nosotros juntos.</p>
+	</h2>
 </div>
 <?php
 $sliderAboutUs = array(
@@ -35,8 +33,7 @@ $sliderAboutUs = array(
 	),
 	"banner2" => array(
 		'image' => get_template_directory_uri() . '/assets/img/banners/banner-nosotros-2.jpg',
-<<<<<<< HEAD
-		'name' => 'Alfredo Garcia',
+		'name' => 'Alfredo García',
 		'position' => 'Gerente comercial',
 		'description' => '25 años de experiencia en el mercado.<br>
 		Experto en el conocimiento del sector<br>
@@ -58,23 +55,6 @@ $sliderAboutUs = array(
 		'name' => 'María J. García',
 		'position' => 'Especialista en estrategia y comunicación digital',
 		'description' => '9 años en el mundo digital, con pasión por<br> las redes soaiales.'
-=======
-		'name' => null,
-		'position' => '',
-		'description' => 'Pasión por la publicidad y comunicación en los genes.'
-	),
-	"banner3" => array(
-		'image' => get_template_directory_uri() . '/assets/img/banners/banner-nosotros-3.jpg',
-		'name' => null,
-		'position' => '',
-		'description' => 'Comunicamos, creamos y resolvemos tus necesidades, para fortalecer la exposición de tu marca en diferentes medios.'
-	),
-	"banner3" => array(
-		'image' => get_template_directory_uri() . '/assets/img/banners/banner-nosotros-4.jpg',
-		'name' => null,
-		'position' => '',
-		'description' => 'Comunicamos, creamos y resolvemos tus necesidades, para fortalecer la exposición de tu marca en diferentes medios.'
->>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
 	),
 );
 get_template_part('template-parts/sliders/about-us', 'page', array('banners' => $sliderAboutUs));
@@ -83,7 +63,6 @@ $sliderValues = array(
 	"banner1" => array(
 		'image' => get_template_directory_uri() . '/assets/img/banners/vision.jpg',
 		'title' => 'Visión Estratégica',
-<<<<<<< HEAD
 		'description' => 'Creamos soluciones personalizadas<br> a la medida de tus necesidades.'
 	),
 	"banner2" => array(
@@ -103,27 +82,6 @@ $sliderValues = array(
 	),
 ); ?>
 <div class="container font-cocogoose font-light text-center xl:text-5xl lg:text-4xl md:text-3xl text-xl md:py-20 py-10 text-sky-blue">
-=======
-		'description' => '27 años de experiencia generando soluciones administrativas, financieras y comerciales.'
-	),
-	"banner2" => array(
-		'image' => get_template_directory_uri() . '/assets/img/banners/servicio-personalizado.jpg',
-		'title' => null,
-		'description' => 'Pasión por la publicidad y comunicación en los genes.'
-	),
-	"banner3" => array(
-		'image' => get_template_directory_uri() . '/assets/img/banners/acompanamiento-constante.jpg',
-		'title' => null,
-		'description' => 'Comunicamos, creamos y resolvemos tus necesidades, para fortalecer la exposición de tu marca en diferentes medios.'
-	),
-	"banner4" => array(
-		'image' => get_template_directory_uri() . '/assets/img/banners/amplia-experiencia.jpg',
-		'title' => null,
-		'description' => 'Comunicamos, creamos y resolvemos tus necesidades, para fortalecer la exposición de tu marca en diferentes medios.'
-	),
-); ?>
-<div class="container font-cocogoose font-light text-center xl:text-5xl lg:text-4xl md:text-3xl text-xl md:py-20 py-10">
->>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
 	<h3>¿Qué valores distintivos nos inspiran?</h3>
 </div>
 <?php

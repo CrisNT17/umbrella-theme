@@ -19,15 +19,10 @@
 			<div class="swiper-slide w-full">
 				<div class="container grid md:grid-cols-2 grid-cols-1">
 					<img class="w-full md:h-[30rem] h-72 object-cover object-center" src="<?= $banner['image'] ?>" alt="">
-<<<<<<< HEAD
-					<div class="text-end flex justify-center items-center py-5 ">
-						<div class="space-y-1 translate-x-14">
-=======
-					<div class="text-end flex justify-center items-center py-5">
+					<div class="md:text-end text-center flex justify-center items-center py-5">
 						<div class="space-y-1">
->>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
-							<h2 class="font-cocogoose xl:text-7xl lg:text-6xl md:text-5xl text-2xl"><span class="text-sky-blue"><?= $first_word; ?></span> <br> <?= $remaining_words; ?></h2>
-							<hr class="bg-sky-blue text-sky-blue md:h-2 h-0.5 rounded-md md:w-44 w-24 ml-auto">
+							<h2 class="font-cocogoose xl:text-6xl lg:text-4xl md:text-4xl text-2xl"><span class="text-sky-blue"><?= $first_word; ?></span> <br> <?= $remaining_words; ?></h2>
+							<hr class="bg-sky-blue text-sky-blue md:h-2 h-0.5 md:w-44 w-24 md:ml-auto md:mx-0 mx-auto">
 							<p class="md:text-2xl text-sm py-5"><?= $banner['description'] ?></p>
 						</div>
 					</div>
