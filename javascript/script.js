@@ -52,7 +52,10 @@ const aboutUsSlider = new Swiper('.about-us-slider', {
 	 },
 })
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
 const ourValuesSlider = new Swiper('.our-values-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,

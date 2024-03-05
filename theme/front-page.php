@@ -36,7 +36,11 @@ get_template_part('template-parts/sliders/home', 'page', array('banners' => $sli
 <section class="relative bg-cover bg-no-repeat bg-center overflow-auto" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/banners/banner-quienes-somos.jpg' ?>');">
 	<div class="container flex flex-col justify-center md:items-end items-center md:mt-32 mt-16 md:mb-24 mb-16">
 		<h2 class="xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-white font-cocogoose font-light md:text-end text-center">
+<<<<<<< HEAD
 			<span class="text-sky-blue font-cocogoose">Q</span>uiénes </br>somos
+=======
+			<span class="text-sky-blue">Q</span>uiénes </br>somos
+>>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
 		</h2>
 		<hr class="bg-white text-white rounded-md h-1.5 w-28 mb-8 ">
 		<span class="xl:text-4xl lg:text-[1.65rem] md:text-xl text-xl font-museo font-light text-white md:text-end text-center md:block hidden">Comunicación eficaz para tu marca <br>o producto. <br>Más de 25 años de experiencia en la <br>industria del Marketing & Publicidad.</span>

@@ -9,7 +9,11 @@
  */
 
 ?>
+<<<<<<< HEAD
 <div class="about-inspire-slider overflow-hidden xl:h-[650px] lg:h-[550px] md:h-[550px] h-[300px] relative box-content">
+=======
+<div class="about-us-slider overflow-hidden xl:h-[650px] lg:h-[550px] md:h-[550px] h-[300px] relative box-content">
+>>>>>>> 896aef2c6984f649a7ec1b3adee698e88a531dea
 	<div class="swiper-wrapper">
 		<!-- Slides -->
 		<?php foreach ($args['banners'] as $banner) :
