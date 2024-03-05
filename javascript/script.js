@@ -70,6 +70,62 @@ const ourValuesSlider = new Swiper('.our-values-slider', {
 	 },
 })
 
+const awardsSlider = new Swiper('.awards-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+const testimonialsSlider = new Swiper('.testimonials-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+const serviceRightSlider = new Swiper('.service-right-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+const serviceLeftSlider = new Swiper('.service-right-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
 const servicespaSlider = new Swiper('.servicespa-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -158,6 +214,10 @@ window.initializeCarousel = homeSlider;
 window.initializeCarousel = customersSlider;
 window.initializeCarousel = aboutUsSlider;
 window.initializeCarousel = ourValuesSlider;
+window.initializeCarousel = awardsSlider;
+window.initializeCarousel = testimonialsSlider;
+window.initializeCarousel = serviceRightSlider;
+window.initializeCarousel = serviceLeftSlider;
 window.initializeCarousel = servicespaSlider;
 window.initializeCarousel = servicesciSlider;
 window.initializeCarousel = servicespbtlSlider;
