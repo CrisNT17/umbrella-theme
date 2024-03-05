@@ -13,99 +13,118 @@
 get_header();
 
 $sliderHome = array(
-	"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
-	"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
-	"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+	"banner1" => array(
+		'image' => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+		'title' => 'New' . PHP_EOL . 'Beginnings',
+		'description' => null
+	),
+	"banner2" => array(
+		'image' => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+		'title' => null,
+		'description' => 'Pasión por la publicidad y comunicación en los genes.'
+	),
+	"banner3" => array(
+		'image' => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+		'title' => null,
+		'description' => 'Comunicamos, creamos y resolvemos tus necesidades, para fortalecer la exposición de tu marca en diferentes medios.'
+	),
 );
 get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderHome));
-
 ?>
-<!-- Slider -->
-<section class="w-full h-[4rem] flex justify-start items-end   absolute ">
-
-	<div class="container absolute z-10">
-
-
-		<h2 class="md:text-[89px] sm:text-6xl text-white font-black leading-none">
-			New </br><span class="text-sky-blue">B</span>eginnings
-			<div class=" flex justify-start">
-				<hr class="bg-sky-blue rounded-md h-1 w-32 -mt-1 mb-36 ">
-			</div>
-		</h2>
-	</div>
-
-</section>
 
 <!-- About Us-->
-<section class="relative w-full md:h-[40rem] sm:h-[30rem] flex justify-end items-center bg-cover bg-no-repeat bg-center overflow-hidden" style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/catrin-johnson-ym96FAhQ8o4-unsplash-scaled.jpg');">
-	<div class="md:mr-36 sm:mr-10">
-		<h2 class="md:text-[89px] sm:text-6xl text-white font-black leading-none text-end">
+<section class="relative bg-cover bg-no-repeat bg-center overflow-auto" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/banners/banner-quienes-somos.jpg' ?>');">
+	<div class="container flex flex-col justify-center md:items-end items-center md:mt-32 mt-16 md:mb-24 mb-16">
+		<h2 class="xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl text-5xl text-white font-cocogoose font-light md:text-end text-center">
 			<span class="text-sky-blue">Q</span>uiénes </br>somos
 		</h2>
-		<div class=" flex justify-end">
-			<hr class="bg-white rounded-md h-1.5 w-28 -mt-1 mb-8 ">
-		</div>
-		<h3 class="text-[20px] text-white text-end">Comunicación eficaz para tu marca <br>o producto. <br>Más de 25 años de experiencia en la <br>industria del Marketing & Publicidad.
-		</h3>
+		<hr class="bg-white text-white rounded-md h-1.5 w-28 mb-8 ">
+		<span class="xl:text-4xl lg:text-[1.65rem] md:text-xl text-xl font-museo font-light text-white md:text-end text-center md:block hidden">Comunicación eficaz para tu marca <br>o producto. <br>Más de 25 años de experiencia en la <br>industria del Marketing & Publicidad.</span>
+		<span class="xl:text-4xl lg:text-[1.65rem] md:text-xl text-xl font-museo font-light text-white text-center md:hidden block">Comunicación eficaz para tu marca o producto. <br> Más de 25 años de experiencia en la industria del Marketing & Publicidad.</span>
 	</div>
 </section>
 
 <!-- Why choosen -->
-<section class="relative w-full md:h-[35rem] sm:[60rem] bg-auto bg-white  flex items-center justify-center ">
-	<div class="mt-10 mb-10">
-		<h2 class="text-[40px] text-sky-blue font-black  text-center"> ¿POR QUÉ ELEGIRNOS?</h2>
-		<div class=" flex justify-center">
-			<hr class="bg-sky-blue rounded-md h-1 w-24 -mt-1 mb-8 ">
-		</div>
-
-		<div class=" container flex justify-evenly md:gap-40 sm:gap-10 mt-10 sm:flex-col md:flex-row space-y-0 ">
-
-			<div class="flex flex-col justify-center  items-center sm:mt-0 border-4">
-				<img class="md:size-36 sm:size-20" src="http://umbrella.local/wp-content/uploads/2024/02/Vector.svg" alt="">
-				<h2 class="md:text-8xl sm:text-6xl mt-4  text-sky-blue font-black flex text-center"> +200 </h2>
-				<span class="font-normal md:text-4xl sm:text-2xl text-sky-blue text-center">CLIENTES</span>
+<section class="container relative w-full bg-auto bg-white  flex items-center justify-center ">
+	<div class="md:my-20 my-10">
+		<h2 class="xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-sky-blue font-cocogoose text-center uppercase"> ¿POR QUÉ ELEGIRNOS?</h2>
+		<hr class="bg-sky-blue text-sky-blue rounded-md h-1 w-24 mt-1 md:mb-20 mb-10 mx-auto">
+		<div class="container flex md:flex-row flex-col justify-center items-center xl:gap-40 lg:gap-28 md:gap-20 gap-10 space-y-5">
+			<div class="flex flex-col justify-center items-center">
+				<div class="xl:size-36 lg:size-28 md:size-20 size-20">
+					<img class="h-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/icons/customers-icon.svg' ?>" alt="">
+				</div>
+				<h2 class="xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 text-sky-blue font-museo font-black flex text-center"> +200 </h2>
+				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl text-sky-blue font-museo font-medium text-center uppercase">CLIENTES</span>
 			</div>
-
-			<div class="flex flex-col justify-center  items-center border-4">
-				<img class="md:size-36 sm:size-20" src="http://umbrella.local/wp-content/uploads/2024/02/Vector-2.svg" alt="">
-				<h2 class="md:text-8xl sm:text-6xl mt-4 text-gray font-black flex text-center"> +250 </h2>
-				<span class="font-normal text-4xl text-gray-400 text-center">PROYECTOS</span>
+			<div class="flex flex-col justify-center items-center">
+				<div class="xl:size-36 lg:size-28 md:size-20 size-20">
+					<img class="h-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/icons/projects-icon.svg' ?>" alt="">
+				</div>
+				<h2 class="xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 font-museo font-black flex text-center">+250 </h2>
+				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl text-gray-400 font-museo font-medium text-center uppercase">PROYECTOS</span>
 			</div>
-
 			<div class="flex flex-col justify-center  items-center">
-				<img class="md:size-36 sm:size-20" src="http://umbrella.local/wp-content/uploads/2024/02/Vector-3.svg" alt="">
-				<h2 class="md:text-8xl sm:text-6xl mt-4 text-sky-blue font-black flex text-center"> +25 </h2>
-				<span class="font-normal text-4xl text-sky-blue text-center">AÑOS</span>
+				<div class="xl:size-36 lg:size-28 md:size-20 size-20">
+					<img class="h-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/icons/years-icon.svg' ?>" alt="">
+				</div>
+				<h2 class="xl:text-8xl lg:text-7xl md:text-6xl text-5xl mt-4 text-sky-blue font-museo font-black flex text-center"> +25 </h2>
+				<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl text-sky-blue font-museo font-medium text-center uppercase">AÑOS</span>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Team -->
-<section class="relative w-full md:h-[50rem] sm:h-[30rem] bg-cover bg-center bg-sky-blue flex justify-end items-end" style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/group-of-people-working-out-business-plan-in-an-office-scaled.jpg');">
-
-	<div class="md:mb-24 md:mr-24 sm:mb-10 sm:mr-10">
-
-		<h2 class="md:text-7xl sm:text-5xl text-white font-normal leading-none text-end">
-			NUESTRO</br><span class="text-sky-blue font-black md:text-8xl sm:text-5xl">E</span><span class="text-white font-black md:text-8xl sm:text-5xl">QUIPO</span>
+<section class="xl:h-[850px] lg:h-[650px] md:h-[550px] h-[400px] bg-cover bg-no-repeat bg-center overflow-auto" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/banners/cta-nosotros.jpg' ?>');">
+	<div class="container h-full flex flex-col md:justify-end justify-center md:items-end items-center xl:pb-32 lg:pb-24 md:pb-20 pb-0">
+		<h2 class="xl:text-5xl lg:text-4xl md:text-3xl text-3xl text-white font-cocogoose font-extralight md:text-end text-center uppercase">
+			Nuestro <br><div class="xl:text-6xl lg:text-5xl md:text-4xl text-4xl"><span class="text-sky-blue">E</span>quipo</div>
 		</h2>
-		<div class=" flex justify-end">
-			<hr class="bg-sky-blue rounded-md h-1.5 w-52 -mt-1 mb-8 ">
-		</div>
-		<h3 class="text-[20px] text-white text-end">Conócenos... <br>(nos lleva a la pag institucional)
-		</h3>
+		<hr class="bg-sky-blue text-sky-blue rounded-md h-1.5 mt-1 w-28 md:mb-8 mb-4">
+		<a href="<?= get_site_url() . '/nosotros' ?>" class="xl:text-4xl lg:text-[1.65rem] md:text-xl text-2xl font-museo font-light text-white md:text-end text-center">Conócenos ...</a>
 	</div>
 </section>
 
-<!-- Clients -->
-<section class="relative w-full md:h-[20rem] sm:h-[16rem] bg-auto bg-white  flex justify-center mt-20 ">
-	<div>
-		<h2 class="text-[40px] text-sky-blue font-black justify-center"> NUESTROS CLIENTES</h2>
-		<div class=" flex justify-center">
-			<hr class="bg-sky-blue rounded-md h-1 w-24 -mt-1 mb-8 ">
-		</div>
-	</div>
-</section>
+<?php
+$customers = array(
+	"customer1" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/nutricia.png',
+	),
+	"customer2" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/sanofi.png',
+	),
+	"customer3" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/bristal-myers.png',
+	),
+	"customer4" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/cnt.png',
+	),
+	"customer5" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/novartis.png',
+	),
+	"customer6" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/qroma.png',
+	),
+	"customer7" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/sima.png',
+	),
+	"customer8" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/recalcine.png',
+	),
+	"customer9" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/stendhal.png',
+	),
+	"customer10" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/mayekawa.png',
+	),
+	"customer11" => array(
+		'image' => get_template_directory_uri() . '/assets/img/logos/customers/habitat-iii.png',
+	)
+);
+// Customers
+get_template_part('template-parts/sliders/customers', 'slider', array('banners' => $customers));
+?>
 
 <!-- Projects -->
 <section class=" relative w-full md:h-[55rem] sm:h-[20rem] bg-cover bg-center " style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/white-concrete-wall-5-scaled.jpg');">
