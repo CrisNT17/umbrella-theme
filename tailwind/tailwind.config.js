@@ -28,11 +28,11 @@ module.exports = {
 			container: {
 				center: true,
 				padding: {
-					DEFAULT: '1rem',
-					sm: '2rem',
-					md: '3rem',
-					lg: '4rem',
-					xl: '5rem',
+					DEFAULT: '0.75rem',
+					sm: '1.5rem',
+					md: '2rem',
+					lg: '3rem',
+					xl: '4rem',
 				},
 			},
 			colors: {
