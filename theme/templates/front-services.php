@@ -21,14 +21,23 @@ get_template_part('template-parts/banners/internal', 'page');
 ?>
 <section class="w-full h-auto flex items-center justify-center">
 
-<div class="md:container md:mx-auto ">
+<div class="md:container md:mx-auto  ">
 
 <div class="container pl-0 pr-0 ">
 	<!-- Publicidad Aérea -->
 	<div class="flex items-center mt-10  sm:flex-col md:flex-row ">
 
 		<div class="slider overflow-hidden relative md:w-3/5 sm:w-full">
-			<img class="w-full h-full " src="http://umbrella.local/wp-content/uploads/2024/02/78cf2973-3dde-4f98-be95-98cedfbda7c7.jpg" alt="">
+
+		<?php
+		$sliderServicepa = array(
+			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+		);
+		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicepa));
+
+		?>
 
 			<!-- Bullets -->
   			<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10;">
@@ -70,8 +79,16 @@ get_template_part('template-parts/banners/internal', 'page');
 			</h2>
 		</div>
 		<div class="slider overflow-hidden relative md:w-1/2 sm:w-full">
-			<img class="w-full" src="http://umbrella.local/wp-content/uploads/2024/02/disenador-grafico-haciendo-logo-cuaderno-scaled.jpg" alt="">
 
+			<?php
+			$sliderServiceci = array(
+				"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+				"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+				"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+			);
+			get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServiceci));
+
+			?>
 						<!-- Bullets -->
   		<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10">
   		<span class="bg-white rounded-full w-2 h-2 inline-block mr-3"></span>
@@ -89,8 +106,16 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center mt-8 sm:flex-col md:flex-row">
 
 		<div class="h-[34rem]  overflow-hidden slider relative md:w-3/5 sm:w-full">
-			<img class="w-full h-full object-cover " src="http://umbrella.local/wp-content/uploads/2024/02/d70f23f6-4a0e-4ac7-9809-9b7c5a789908.jpg" alt="">
+			
+			<?php
+		$sliderServicepbtl = array(
+			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+		);
+		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicepbtl));
 
+		?>
 						<!-- Bullets -->
   			<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10">
   				<span class="bg-white rounded-full w-2 h-2 inline-block mr-3"></span>
@@ -130,6 +155,7 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 		<div class="slider overflow-hidden relative md:w-1/2 sm:w-full">
 			<img class="w-full h-[32rem]" src="http://umbrella.local/wp-content/uploads/2024/02/aa1093d7-ed7d-4c61-aa04-9a017ae8c880.jpeg" alt="">
+
 			<!-- botón -->
 			<button class=" absolute bottom-5 right-5 border-white bg-transparent  text-white font-bold py-2 px-4 rounded" style="border-radius: 25px; border-width: 2px; z-index: 10;">Ver más... </button>
 
@@ -143,7 +169,16 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center  mt-8 sm:flex-col md:flex-row">
 
 		<div class=" h-full slider overflow-hidden relative  md:w-3/5 sm:w-full">
-			<img class="w-full h-[32rem]" src="http://umbrella.local/wp-content/uploads/2024/02/65876-scaled.jpg" alt="">
+
+			<?php
+		$sliderServicerp = array(
+			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+		);
+		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicerp));
+
+		?>
 
 						<!-- Bullets -->
   			<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10">
@@ -185,7 +220,16 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 
 		<div class="slider overflow-hidden relative md:w-1/2 sm:w-full">
-			<img class="w-full h-[32rem]" src="http://umbrella.local/wp-content/uploads/2024/02/jovenes-usando-carretes-scaled.jpg" alt="">
+
+			<?php
+		$sliderServicecd = array(
+			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+		);
+		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicecd));
+
+		?>
 
 			<!-- Bullets -->
 			<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10">
@@ -201,7 +245,16 @@ get_template_part('template-parts/banners/internal', 'page');
 	<div class="flex items-center mt-8 mb-12 sm:flex-col md:flex-row">
 
 		<div class="slider overflow-hidden relative md:w-3/5 sm:w-full">
-			<img class="w-full" src="http://umbrella.local/wp-content/uploads/2024/02/cerrar-proyecto-dibujo-arquitecto-scaled.jpg" alt="">
+
+			<?php
+		$sliderServicedi = array(
+			"banner1" => get_template_directory_uri() . '/assets/img/banners/banner-home-1.jpg',
+			"banner2" => get_template_directory_uri() . '/assets/img/banners/banner-home-2.jpg',
+			"banner3" => get_template_directory_uri() . '/assets/img/banners/banner-home-3.jpg',
+		);
+		get_template_part('template-parts/sliders/home', 'page', array('banners' => $sliderServicedi));
+
+		?>
 
 						<!-- Bullets -->
   <div class="absolute bottom-0 right-0 mb-4 mr-4"style="z-index: 10 ">
