@@ -38,6 +38,34 @@ const customersSlider = new Swiper('.customers-slider', {
 	 },
 })
 
+const aboutUsSlider = new Swiper('.about-us-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
+const ourValuesSlider = new Swiper('.our-values-slider', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	loop: true,
+	loopedSlides: 1,
+	autoplay: {
+		delay: 3500,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+})
+
 const servicespaSlider = new Swiper('.servicespa-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
@@ -124,6 +152,8 @@ const servicesdiSlider = new Swiper('.servicesdi-slider', {
 
 window.initializeCarousel = homeSlider;
 window.initializeCarousel = customersSlider;
+window.initializeCarousel = aboutUsSlider;
+window.initializeCarousel = ourValuesSlider;
 window.initializeCarousel = servicespaSlider;
 window.initializeCarousel = servicesciSlider;
 window.initializeCarousel = servicespbtlSlider;

@@ -79,7 +79,8 @@ get_template_part('template-parts/sliders/home', 'page', array('banners' => $sli
 <section class="xl:h-[850px] lg:h-[650px] md:h-[550px] h-[400px] bg-cover bg-no-repeat bg-center overflow-auto" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/banners/cta-nosotros.jpg' ?>');">
 	<div class="container h-full flex flex-col md:justify-end justify-center md:items-end items-center xl:pb-32 lg:pb-24 md:pb-20 pb-0">
 		<h2 class="xl:text-5xl lg:text-4xl md:text-3xl text-3xl text-white font-cocogoose font-extralight md:text-end text-center uppercase">
-			Nuestro <br><div class="xl:text-6xl lg:text-5xl md:text-4xl text-4xl"><span class="text-sky-blue">E</span>quipo</div>
+			Nuestro <br>
+			<div class="xl:text-6xl lg:text-5xl md:text-4xl text-4xl"><span class="text-sky-blue">E</span>quipo</div>
 		</h2>
 		<hr class="bg-sky-blue text-sky-blue rounded-md h-1.5 mt-1 w-28 md:mb-8 mb-4">
 		<a href="<?= get_site_url() . '/nosotros' ?>" class="xl:text-4xl lg:text-[1.65rem] md:text-xl text-2xl font-museo font-light text-white md:text-end text-center">Conócenos ...</a>
@@ -125,37 +126,30 @@ $customers = array(
 // Customers
 get_template_part('template-parts/sliders/customers', 'slider', array('banners' => $customers));
 ?>
-
 <!-- Projects -->
-<section class=" relative w-full md:h-[55rem] sm:h-[20rem] bg-cover bg-center " style="background-image: url('http://umbrella.local/wp-content/uploads/2024/02/white-concrete-wall-5-scaled.jpg');">
-	<div class="container w-full h-full  relative translate-y-10 ">
-
-		<div class="md:w-full   md:border-r-4 sm:border-r-2 border-sky-blue relative mt-10 flex items-end ">
-			<div class=" md:w-[90%] sm:w-full h-full grid grid-cols-4 grid-rows-2 md:gap-3 sm:gap-1   ">
-				<div class="col-span-2 row-span-2">
-					<img class="w-full h-full" src="http://umbrella.local/wp-content/uploads/2024/02/244253804_1913345092171178_377135258163533003_n.jpeg" alt="Imagen 1" class="w-full h-full object-cover">
-				</div>
-				<div class=" col-span-1">
-					<img class="w-full h-full" src="http://umbrella.local/wp-content/uploads/2024/02/37282239_928063084032722_6560287920136126464_n.jpeg" alt="Imagen 2" class="w-full h-full object-cover">
-				</div>
-				<div class=" col-span-1">
-					<img class="w-full h-full" src="http://umbrella.local/wp-content/uploads/2024/02/244079091_1913345055504515_4195074341419206271_n.jpeg" alt="Imagen 3" class="w-full h-full object-cover">
-				</div>
-				<div class="relative col-span-2 ">
-					<img class="w-full h-full" src="http://umbrella.local/wp-content/uploads/2024/02/37256962_928062957366068_515493240565137408_n.jpeg" alt="Imagen 4" class="w-full h-full object-cover">
-					<button class=" absolute sm:text-[8px] md:text-base md:bottom-5 right-5 sm:bottom-1 border-white bg-transparent  text-white font-bold md:py-3 sm:py-0.25 md:px-5 sm:px-0.5 rounded " style="border-radius: 25px; border-width: 2px;">Ver más... </button>
-				</div>
-
-
-
+<section class="w-full overflow-hidden xl:py-20 py-10 bg-cover bg-center" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/backgrounds/bg-proyectos.jpg' ?>');">
+	<div class="container border-r-2 flex md:flex-row flex-col md:justify-between justify-center items-center">
+		<span class="text-3xl font-cocogoose text-sky-blue uppercase text-center mb-10">Proyectos</span>
+		<div class="grid md:grid-cols-4 grid-cols-3 md:gap-3 gap-1">
+			<div class="md:col-span-2 md:row-span-2 col-span-3">
+				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-1.jpg' ?>" alt="Imagen 1">
 			</div>
-			<span class="block text-4xl text-sky-blue -rotate-90  font-black md:text-[60px] sm:text-[16px] uppercase md:w-20 sm:w-6 md:-translate-y-6 md:translate-x-8 sm:translate-x-1 sm:translate-y-1">proyectos</span>
-
+			<div class="col-span-1 md:h-auto h-32">
+				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-2.jpg' ?>" alt="Imagen 2">
+			</div>
+			<div class="col-span-1 md:h-auto h-32">
+				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-3.jpg' ?>" alt="Imagen 3">
+			</div>
+			<div class="relative md:col-span-2 col-span-1 md:h-auto h-32">
+				<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/banners/proyecto-4.jpg' ?>" alt="Imagen 4">
+				<button class="font-cocogoose text-xs font-extralight absolute md:bottom-5 right-5 bottom-1 border-white border-2 rounded-3xl text-white px-3 py-2 md:block hidden">Ver más... </button>
+			</div>
 		</div>
-
+		<div class="md:flex flex-col justify-center items-center hidden">
+			<span class="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-cocogoose text-sky-blue transform -rotate-90 origin-bottom right-4 uppercase">proyectos</span>
+		</div>
 	</div>
 </section>
-
 <?php
 get_footer();
 ?>
