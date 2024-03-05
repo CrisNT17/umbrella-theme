@@ -55,8 +55,6 @@ get_template_part('template-parts/banners/internal', 'page')
 				)
 			);
 			get_template_part('template-parts/sliders/testimonial', 'slider', array('testimonials' => $testimonials)); ?>
-			<!-- <p class="text-center md:text-3xl leading-snug mt-16 sm:text-lg">El profesionalismo de UMBRELLA SOLUTION'S es de calidad <br> internacional. Trabajan con los mejores materiales y la <br> disposición de su equipo para cualquier proyecto se refleja en <br> los resultados finales. ¡Superan expectativas!</p>
-			<span class="block text-center md:text-3xl text-lg text-gray leading-snug mt-5 italic">Anthony Almeida, VETERINO</span> -->
 		</div>
 			<button class="prev absolute top-1/2 left-0 transform -translate-y-1/2 text-4xl"><</button>
   			<button class="next absolute top-1/2 right-0 transform -translate-y-1/2 text-4xl">></button>
