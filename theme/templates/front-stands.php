@@ -35,19 +35,19 @@ get_template_part('template-parts/banners/internal', 'page');
 		<div class="flex justify-center items-center p-10">
 			<img class="w-full my-10" src="<?= get_template_directory_uri() . '/assets/img/logos/titan-logo.jpg' ?>" alt="">
 		</div>
-		<div class=flex items-center justify-center xl:text-3xl lg:text-2xl md:text-xl text-lg text-center md:my-20 my-10 font-museo font-light">
+		<div class="flex items-center justify-center xl:text-3xl lg:text-2xl md:text-xl text-lg text-center md:my-20 my-10 font-museo font-light">
 			<p>Nuestro cliente nos pidió un stand en el cual esté inspirado la esencia de su marca, a traves de propuestas alineadas a su branding este fue el resultado.</p>
 		</div>
 	</div>
 	<div class="grid md:grid-cols-5 grid-cols-1 gap-x-10 gap-y-5 place-content-center my-10">
 		<a class="col-span-3 " data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4">
-			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4" type="video/mp4" controls></video>
+			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4" type="video/mp4" controls></video>
 		</a>
 		<a class="col-span-2 row-span-2" data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4">
-			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4" type="video/mp4" controls></video>
+			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4" type="video/mp4" controls></video>
 		</a>
-		<a class="col-span-3 " data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.00.03.png">
-			<img class="w-full h-full" src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.00.03.png" alt="">
+		<a class="col-span-3 " data-fancybox="gallery-titan" data-src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>">
+			<img class="w-full h-96 " src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>" alt="">
 		</a>
 
 
@@ -56,7 +56,7 @@ get_template_part('template-parts/banners/internal', 'page');
 	<!-- Stand Pan -->
 	<div class="grid md:grid-cols-2 grid-cols-1 place-content-center">
 		<div class="flex justify-center items-center p-10">
-			<img class="w-full my-10" src="http://umbsolut.com/wp-content/uploads/2024/03/portada-harinapan-imagenes-brandemia-blog.webp" alt="">
+			<img class="w-full my-10" src="<?= get_template_directory_uri() . '/assets/img/logos/logo-pan.jpg' ?>" alt="">
 		</div>
 		<div class="flex items-center justify-center xl:text-3xl lg:text-2xl md:text-xl text-lg text-center md:my-20 my-10 font-museo font-light">
 			<p>Nuestro cliente nos pidió un stand en el cual esté inspirado la esencia de su marca, a traves de propuestas alineadas a su branding este fue el resultado.</p>
@@ -69,34 +69,34 @@ get_template_part('template-parts/banners/internal', 'page');
 		<a class="col-span-2" data-fancybox="gallery-pan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-HAYPAN.mp4">
 			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-HAYPAN.mp4" type="video/mp4" controls></video>
 		</a>
-		<a class="col-span-2" data-fancybox="gallery-pan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.05.04.png">
-			<img class="w-full h-full" src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.05.04.png" alt="">
+		<a class="col-span-2" data-fancybox="gallery-pan" data-src="<?= get_template_directory_uri() . '/assets/img/stands/pan-stand-1.jpg' ?>">
+			<img class="w-full h-full" src="<?= get_template_directory_uri() . '/assets/img/stands/pan-stand-1.jpg' ?>" alt="">
 		</a>
 	</div>
 	<!-- Stand Montero -->
 	<div class="grid md:grid-cols-2 grid-cols-1 place-content-center">
-		<div class="flex justify-center items-center p-10">
-			<img class="w-full my-10" src="http://umbsolut.com/wp-content/uploads/2024/03/Logo_Montero.jpeg" alt="">
+		<div class="flex justify-center items-center p-10 ">
+			<img class="w-full my-10 " src="<?= get_template_directory_uri() . '/assets/img/logos/logo-montero.jpg' ?>" alt="">
 		</div>
 		<div class="flex items-center justify-center xl:text-3xl lg:text-2xl md:text-xl text-lg text-center md:my-20 my-10 font-museo font-light">
 			<p>Nuestro cliente nos pidió un stand en el cual esté inspirado la esencia de su marca, a traves de propuestas alineadas a su branding este fue el resultado.</p>
 		</div>
 	</div>
 	<div class="grid md:grid-cols-10 grid-cols-1 gap-5 place-content-center">
-		<a class="col-span-6 row-span-2 border-4" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-MONTERO.mp4">
+		<a class="col-span-6 row-span-2" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-MONTERO.mp4">
 			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-MONTERO.mp4" type="video/mp4" controls></video>
 		</a>
-		<a class="col-span-2" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.03.15.png">
-			<img class="w-full h-72" src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.03.15.png" alt="">
+		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-1.jpg' ?>">
+			<img class="w-full h-72" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-1.jpg' ?>" alt="">
 		</a>
-		<a class="col-span-2" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.21.15.png">
-			<img class="w-full h-72" src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.21.15.png" alt="">
+		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-2.jpg' ?>">
+			<img class="w-full h-72" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-2.jpg' ?>" alt="">
 		</a>
-		<a class="col-span-2" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.20.32.png">
-			<img class="w-full h-72 " src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.20.32.png" alt="">
+		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-3.jpg' ?>">
+			<img class="w-full h-72 " src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-3.jpg' ?>" alt="">
 		</a>
-		<a class="col-span-2" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.20.47.png">
-			<img class="w-full h-72 " src="http://umbsolut.com/wp-content/uploads/2024/03/Captura-de-Pantalla-2024-02-04-a-las-23.20.47.png" alt="">
+		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-4.jpg' ?>">
+			<img class="w-full h-72 " src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-4.jpg' ?>" alt="">
 		</a>
 
 
