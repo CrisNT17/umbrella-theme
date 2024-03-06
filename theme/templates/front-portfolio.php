@@ -39,8 +39,13 @@ get_template_part('template-parts/banners/internal', 'page')
 					<div class="slide flex flex-col justify-center  items-center">
 						<img class="w-full h-full" src="<?= get_template_directory_uri() . '/assets/img/banners/portafolio-4.jpg' ?>" alt="">
 					</div>
+
 				</div>
+				<div class="swiper-wrapper "></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 			</div>
+
 		</div>
 		<?php
 		$testimonials = array(

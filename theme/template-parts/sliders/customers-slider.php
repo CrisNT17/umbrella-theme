@@ -29,8 +29,13 @@
 						<span class="bg-white rounded-full size-2 inline-block mr-2"></span>
 					</div>
 					<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
+
 				</div>
+
 			<?php endforeach; ?>
 		</div>
+		<div class="swiper-wrapper bg-light-gray"></div>
+					<div class="swiper-button-prev customers"></div>
+					<div class="swiper-button-next customers"></div>
 	</div>
 </div>

@@ -17,8 +17,12 @@
 				<div class="container  sm:w-full sm:p-0 md:p-20">
 					<p class="text-center md:text-3xl leading-snug mt-16 sm:text-lg"><?= $testimonial['description'];?></p>
 					<span class="block text-center md:text-3xl text-lg text-gray leading-snug mt-5 italic"><?= $testimonial['name']?></span>
+
 				</div>
+
 			</div>
+
 		<?php endforeach; ?>
 	</div>
+	
 </div>

@@ -23,3 +23,8 @@ body {
 .current-menu-item {
 	@apply text-sky-blue;
 }
+.swiper-button-prev.customers::after,
+.swiper-button-prev.customers::after,
+{
+	@apply bg-light-gray text-light-gray !important;
+}
