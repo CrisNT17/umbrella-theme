@@ -31,25 +31,25 @@ get_template_part('template-parts/banners/internal', 'page');
 			get_template_part('template-parts/sliders/services', 'right', array('banners' => $sliderServicespa));
 			?>
 		</div>
-		<div class="col-span-5 flex flex-col justify-center md:items-end items-center  xl:w-3/4 lg:w-3/4 md:w-full w-full font-cocogoose md:p-10">
+		<div class="col-span-5 flex  flex-col justify-center md:items-end items-center  xl:w-3/4 lg:w-3/4 md:w-full w-full font-cocogoose md:p-10 mb-10">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue text-end font-extralight  whitespace-normal max-w-full ">
 				Publicidad <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">Aérea</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
 			<span class="xl:text-2xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">Donde todo el mundo te ve.</span>
 		</div>
 	</div>
 	<!-- Comunicación integral -->
 	<div class="grid md:grid-cols-11 grid-cols-1  gap-10 ">
-		<div class="order-2 col-span-5 flex flex-col justify-center md:items-end items-center xl:w-full lg:w-full md:w-full w-full font-cocogoose md:p-10 ">
+		<div class="md:order-1 order-2  col-span-5 flex flex-col justify-center md:items-end items-center xl:w-full lg:w-full md:w-full w-full font-cocogoose md:p-10 mb-10 ">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue md:text-end text-center font-extralight  whitespace-normal max-w-full ">
 				Comunicación <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">Integral</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light ">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light ">
 			<span class="xl:text-2xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">
-			La imagen de tu marca<br> habla por sí sola.<br> Branding <Br>Packaging <br>Logo (Proceso creativo).</span>
+			La imagen de tu marca<br> habla por sí sola.<br> Branding <Br>Packaging .</span>
 		</div>
-		<div class="order-1 col-span-6 ">
+		<div class="md:order-2 order-1 col-span-6 ">
 			<?php
 			$sliderServicesCI = array(
 				"banner1" => get_template_directory_uri() . '/assets/img/banners/comunicacion-integral.jpg',
@@ -70,11 +70,11 @@ get_template_part('template-parts/banners/internal', 'page');
 			get_template_part('template-parts/sliders/services', 'right', array('banners' => $sliderServicesBTL));
 			?>
 		</div>
-		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-3/4 lg:w-3/4 md:w-full w-full font-cocogoose md:p-10">
+		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-3/4 lg:w-3/4 md:w-full w-full font-cocogoose md:p-10 mb-10">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue md:text-end text-center font-extralight  whitespace-normal max-w-full">
 				Publicidad <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">BTL</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
 			<span class="xl:text-2xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">
 			Donde tu marca debe estar.<br>
 				Eventos, actividades en sitio <br> (playa, feria de flores, etc.)
@@ -83,14 +83,14 @@ get_template_part('template-parts/banners/internal', 'page');
 	</div>
 	<!-- Diseño y construcción de stands -->
 	<div class="grid md:grid-cols-11 grid-cols-1  gap-10">
-		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-full lg:w-full md:w-full w-full font-cocogoose md:p-10">
+		<div class="md:order-1 order-2 col-span-5 flex flex-col justify-center md:items-end items-center xl:w-full lg:w-full md:w-full w-full font-cocogoose md:p-10 mb-10">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue md:text-end text-center font-extralight  whitespace-normal max-w-full">
 				Diseño y construcción de <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">Stands</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
 			<span class="xl:text-xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">Creatividad y estrategia para<br> posicionamiento de tu marca en ferias,<br> exposiciones, eventos, centros<br> comerciales...<br> ¡Y más!</span>
 		</div>
-		<div class="col-span-6">
+		<div class="md:order-2 order-1 col-span-6">
 			<?php
 			$sliderServicesCI = array(
 				"banner1" => get_template_directory_uri() . '/assets/img/banners/comunicacion-integral.jpg',
@@ -102,7 +102,7 @@ get_template_part('template-parts/banners/internal', 'page');
 	</div>
 	<!-- Rotulación publicitaria -->
 	<div class="grid md:grid-cols-11 grid-cols-1  gap-10 w-full ">
-		<div class="col-span-6">
+		<div class=" col-span-6">
 			<?php
 			$sliderServicesBTL = array(
 				"banner1" => get_template_directory_uri() . '/assets/img/banners/rotulacion-publicitaria.jpg',
@@ -111,25 +111,25 @@ get_template_part('template-parts/banners/internal', 'page');
 			get_template_part('template-parts/sliders/services', 'right', array('banners' => $sliderServicesBTL));
 			?>
 		</div>
-		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-5/6 lg:w-5/6 md:w-full w-full font-cocogoose  md:p-10">
+		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-5/6 lg:w-5/6 md:w-full w-full font-cocogoose  md:p-10 mb-10">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue md:text-end text-center font-extralight  whitespace-normal max-w-full  ">
 				Rotulación <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">Publicitaria</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
 			<span class="xl:text-2xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">La fuerza de tu marca en <br> exteriores e interiores
 			</span>
 		</div>
 	</div>
 	<!-- Comunicación digital -->
 	<div class="grid md:grid-cols-11 grid-cols-1  gap-10">
-		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-full lg:w-full md:w-full w-full font-cocogoose md:p-10">
+		<div class="md:order-1 order-2 col-span-5 flex flex-col justify-center md:items-end items-center xl:w-full lg:w-full md:w-full w-full font-cocogoose md:p-10 mb-10">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue md:text-end text-center font-extralight  whitespace-normal max-w-full">
 				Comunicación <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">Digital</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
 			<span class="xl:text-2xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">Conversación y conexión digital entre tu<br> marca y tus clientes.<br> RRSS • Desarrollo web • CRM <br> Pauta digital (FB, IG, Google, YT</span>
 		</div>
-		<div class="col-span-6">
+		<div class="md:order-2 order-1 col-span-6">
 			<?php
 			$sliderServicesCD = array(
 				"banner1" => get_template_directory_uri() . '/assets/img/banners/comunicacion-digital.jpg',
@@ -141,7 +141,7 @@ get_template_part('template-parts/banners/internal', 'page');
 	</div>
 	<!-- Diseño interior -->
 	<div class="grid md:grid-cols-11 grid-cols-1  gap-10">
-		<div class="col-span-6">
+		<div class=" col-span-6">
 			<?php
 			$sliderServicesBTL = array(
 				"banner1" => get_template_directory_uri() . '/assets/img/banners/diseno-interior.jpg',
@@ -150,11 +150,11 @@ get_template_part('template-parts/banners/internal', 'page');
 			get_template_part('template-parts/sliders/services', 'right', array('banners' => $sliderServicesBTL));
 			?>
 		</div>
-		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-3/4 lg:w-3/4 md:w-full w-full font-cocogoose md:p-10">
+		<div class="col-span-5 flex flex-col justify-center md:items-end items-center xl:w-3/4 lg:w-3/4 md:w-full w-full font-cocogoose md:p-10 mb-10">
 			<h3 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-sky-blue md:text-end text-center font-extralight  whitespace-normal max-w-full">
 				Diseño <br><span class="xl:text-7xl lg:text-6xl md:text-5xl text-4xl tracking-widest">Interior</span>
 			</h3>
-			<hr class="bg-sky-blue text-sky-blue  h-2 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
+			<hr class="bg-sky-blue text-sky-blue md:h-2 h-1 md:w-44 w-20 mb-3 mt-3 font-museo font-light">
 			<span class="xl:text-2xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">Diseño interior para autoservicios,<br> farmacias, locales y presencia en<br> percha. (videos)</span>
 		</div>
 	</div>
