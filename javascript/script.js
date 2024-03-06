@@ -25,13 +25,27 @@ const homeSlider = new Swiper('.home-slider', {
 })
 
 const customersSlider = new Swiper('.customers-slider', {
-	slidesPerView: 3,
-	spaceBetween: 50,
+	slidesPerView: 4,
+	spaceBetween: 40,
 	loop: true,
 	loopedSlides: 1,
 	autoplay: {
 		delay: 3500,
 	},
+	breakpoints: {
+		1024: {
+			slidesPerView: 4,
+			spaceBetween:30,
+		 },
+		767: {
+		  slidesPerView: 3,
+		  spaceBetween: 20,
+		},
+		425: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		 },
+	 },
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
@@ -47,8 +61,8 @@ const aboutUsSlider = new Swiper('.about-us-slider', {
 		delay: 3500,
 	},
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.swiper-about-us-button-next',
+		prevEl: '.swiper-about-us-button-prev',
 	 },
 })
 
@@ -122,89 +136,89 @@ const serviceLeftSlider = new Swiper('.service-right-slider', {
 	 },
 })
 
-const servicespaSlider = new Swiper('.servicespa-slider', {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 1,
-	autoplay: {
-		delay: 3500,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
-})
+// const servicespaSlider = new Swiper('.servicespa-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	loop: true,
+// 	loopedSlides: 1,
+// 	autoplay: {
+// 		delay: 3500,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	 },
+// })
 
-const servicesciSlider = new Swiper('.servicesci-slider', {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 1,
-	autoplay: {
-		delay: 3500,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
-})
+// const servicesciSlider = new Swiper('.servicesci-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	loop: true,
+// 	loopedSlides: 1,
+// 	autoplay: {
+// 		delay: 3500,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	 },
+// })
 
-const servicespbtlSlider = new Swiper('.servicespbtl-slider', {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 1,
-	autoplay: {
-		delay: 3500,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
-})
+// const servicespbtlSlider = new Swiper('.servicespbtl-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	loop: true,
+// 	loopedSlides: 1,
+// 	autoplay: {
+// 		delay: 3500,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	 },
+// })
 
-const servicesrpSlider = new Swiper('.servicesrp-slider', {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 1,
-	autoplay: {
-		delay: 3500,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
-})
+// const servicesrpSlider = new Swiper('.servicesrp-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	loop: true,
+// 	loopedSlides: 1,
+// 	autoplay: {
+// 		delay: 3500,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	 },
+// })
 
-const servicescdSlider = new Swiper('.servicescd-slider', {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 1,
-	autoplay: {
-		delay: 3500,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
-})
+// const servicescdSlider = new Swiper('.servicescd-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	loop: true,
+// 	loopedSlides: 1,
+// 	autoplay: {
+// 		delay: 3500,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	 },
+// })
 
-const servicesdiSlider = new Swiper('.servicesdi-slider', {
-	slidesPerView: 1,
-	spaceBetween: 0,
-	loop: true,
-	loopedSlides: 1,
-	autoplay: {
-		delay: 3500,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
-})
+// const servicesdiSlider = new Swiper('.servicesdi-slider', {
+// 	slidesPerView: 1,
+// 	spaceBetween: 0,
+// 	loop: true,
+// 	loopedSlides: 1,
+// 	autoplay: {
+// 		delay: 3500,
+// 	},
+// 	navigation: {
+// 		nextEl: '.swiper-button-next',
+// 		prevEl: '.swiper-button-prev',
+// 	 },
+// })
 
 window.initializeCarousel = homeSlider;
 window.initializeCarousel = customersSlider;
@@ -214,9 +228,9 @@ window.initializeCarousel = awardsSlider;
 window.initializeCarousel = testimonialsSlider;
 window.initializeCarousel = serviceRightSlider;
 window.initializeCarousel = serviceLeftSlider;
-window.initializeCarousel = servicespaSlider;
-window.initializeCarousel = servicesciSlider;
-window.initializeCarousel = servicespbtlSlider;
-window.initializeCarousel = servicesrpSlider;
-window.initializeCarousel = servicescdSlider;
-window.initializeCarousel = servicesdiSlider;
+// window.initializeCarousel = servicespaSlider;
+// window.initializeCarousel = servicesciSlider;
+// window.initializeCarousel = servicespbtlSlider;
+// window.initializeCarousel = servicesrpSlider;
+// window.initializeCarousel = servicescdSlider;
+// window.initializeCarousel = servicesdiSlider;

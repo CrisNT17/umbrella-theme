@@ -23,3 +23,19 @@ body {
 .current-menu-item {
 	@apply text-sky-blue;
 }
+
+/* Swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	@apply text-gray md:text-4xl text-base !important;
+}
+
+.swiper-about-us-button-prev,
+.swiper-about-us-button-next {
+	@apply bg-slate-300/90 rounded-full xl:size-12 lg:size-10 md:size-8 size-7 !important;
+}
+
+.swiper-about-us-button-prev::after,
+.swiper-about-us-button-next::after {
+	@apply text-red-500 md:text-xl text-base !important;
+}
