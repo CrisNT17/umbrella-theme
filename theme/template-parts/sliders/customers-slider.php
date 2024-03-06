@@ -12,30 +12,19 @@
 <div class="container md:my-20 my-10">
 	<h2 class="xl:text-6xl lg:text-5xl md:text-4xl text-3xl text-sky-blue font-cocogoose text-center uppercase">Nuestros clientes</h2>
 	<hr class="bg-sky-blue text-sky-blue rounded-md h-1 w-24 mt-1 md:mb-20 mb-10 mx-auto">
-	<div class="customers-slider container relative overflow-hidden">
+	<div class="customers-slider px-10 box-content relative overflow-hidden">
 		<div class="swiper-wrapper">
 			<!-- Slides -->
-			<?php foreach ($args['banners'] as $banner) :
-				/* $image_data = umbrella_get_image_data($image['id']);*/ ?>
+			<?php foreach ($args['banners'] as $banner) :?>
 				<div class="swiper-slide">
-					<!-- <img class="w-full h-full object-cover object-center" src="<?= $image_data['url']; ?>" srcset="<?= $image_data['srcset']; ?>" alt="<?= $image_data['name'] ?>"> -->
-					<img class="max-h-20" src="<?= $banner['image']; ?>" alt="">
-					<!-- Bullets -->
-					<div class="absolute bottom-0 right-0 mb-4 mr-4" style="z-index: 10;">
-						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
-						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
-						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
-						<span class="bg-white rounded-full size-2 inline-block mr-3"></span>
-						<span class="bg-white rounded-full size-2 inline-block mr-2"></span>
+					<div class="lg:h-40 md:h-36 h-28 w-full flex justify-center items-center">
+						<img class="lg:max-h-36 md:max-h-28 max-h-20 mx-auto" src="<?= $banner['image']; ?>" alt="">
 					</div>
-					<div class="absolute inset-0  bg-gradient-to-b from-transparent to-black" style="top: 70%; height: 50%; "></div>
-
 				</div>
 
 			<?php endforeach; ?>
 		</div>
-		<div class="swiper-wrapper bg-light-gray"></div>
-					<div class="swiper-button-prev customers"></div>
-					<div class="swiper-button-next customers"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
 	</div>
 </div>

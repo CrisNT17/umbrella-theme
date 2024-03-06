@@ -28,3 +28,38 @@ body {
 {
 	@apply bg-light-gray text-light-gray !important;
 }
+
+/* Swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	@apply text-gray md:text-4xl text-base !important;
+}
+
+.swiper-button-prev.about-us,
+.swiper-button-next.about-us {
+	@apply bg-slate-300/90 rounded-full xl:size-12 lg:size-10 md:size-8 size-7 !important;
+}
+
+.swiper-button-prev.about-us::after,
+.swiper-button-next.about-us::after {
+	@apply text-gray md:text-xl text-base !important;
+}
+
+.swiper-pagination.home {
+	.swiper-pagination-bullet {
+		@apply bg-light-gray/70 md:size-3 size-2;
+	}
+	&  .swiper-pagination-bullet-active{
+		@apply bg-sky-blue/70;
+	}
+}
+
+.swiper-pagination.our-values {
+	@apply text-end;
+	.swiper-pagination-bullet {
+		@apply bg-sky-blue md:size-3 size-2 opacity-100;
+	}
+	&  .swiper-pagination-bullet-active{
+		@apply bg-white border border-sky-blue;
+	}
+}

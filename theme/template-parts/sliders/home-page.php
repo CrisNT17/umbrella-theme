@@ -33,9 +33,5 @@
 	<div class="absolute z-40 lg:right-14 md:right-10 right-8 md:bottom-0 bottom-5">
 		<?php get_template_part('template-parts/rrss/banner-social', 'media'); ?>
 	</div>
-	<div class="z-40 absolute md:bottom-10 bottom-4 left-1/2 transform -translate-x-1/2 flex justify-center items-center gap-3">
-		<button class="bg-sky-blue/70 md:size-3 size-2 rounded-full"></button>
-		<button class="bg-light-gray/70 md:size-3 size-2 rounded-full"></button>
-		<button class="bg-light-gray/70 md:size-3 size-2 rounded-full"></button>
-	</div>
+	<div class="swiper-pagination home"></div>
 </div>

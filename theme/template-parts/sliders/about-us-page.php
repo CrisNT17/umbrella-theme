@@ -9,7 +9,7 @@
  */
 
 ?>
-<div class="about-us-slider overflow-hidden xl:h-[650px] lg:h-[550px] md:h-[550px] h-[300px] relative box-content">
+<div class="about-us-slider relative overflow-hidden xl:h-[650px] lg:h-[550px] md:h-[550px] h-[300px]">
 	<div class="swiper-wrapper">
 		<!-- Slides -->
 		<?php foreach ($args['banners'] as $banner) :
@@ -25,7 +25,6 @@
 			</div>
 		<?php endforeach; ?>
 	</div>
-	<div class="swiper-wrapper"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev about-us"></div>
+	<div class="swiper-button-next about-us"></div>
 </div>
