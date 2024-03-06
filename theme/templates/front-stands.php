@@ -41,13 +41,13 @@ get_template_part('template-parts/banners/internal', 'page');
 	</div>
 	<div class="grid md:grid-cols-5 grid-cols-1 gap-x-10 gap-y-5 place-content-center my-10">
 		<a class="col-span-3 " data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4">
-			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4" type="video/mp4" controls></video>
+			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4" type="video/mp4" controls></video>
 		</a>
 		<a class="col-span-2 row-span-2" data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4">
-			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4" type="video/mp4" controls></video>
+			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4" type="video/mp4" controls></video>
 		</a>
 		<a class="col-span-3 " data-fancybox="gallery-titan" data-src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>">
-			<img class="w-full h-96 " src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>" alt="">
+			<img class="w-full h-96 object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>" alt="">
 		</a>
 
 
@@ -62,15 +62,15 @@ get_template_part('template-parts/banners/internal', 'page');
 			<p>Nuestro cliente nos pidió un stand en el cual esté inspirado la esencia de su marca, a traves de propuestas alineadas a su branding este fue el resultado.</p>
 		</div>
 	</div>
-	<div class="grid md:grid-cols-10 grid-cols-1 gap-x-5 place-content-center">
+	<div class="grid md:grid-cols-10 grid-cols2 gap-x-5 place-content-center">
 		<a class="col-span-6 row-span-2" data-fancybox="gallery-pan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-HAYPAN.mp4">
-			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-HAYPAN.mp4" type="video/mp4" controls></video>
+			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-HAYPAN.mp4" type="video/mp4" controls></video>
 		</a>
 		<a class="col-span-2" data-fancybox="gallery-pan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-HAYPAN.mp4">
-			<video class="w-full h-full " src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-HAYPAN.mp4" type="video/mp4" controls></video>
+			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-HAYPAN.mp4" type="video/mp4" controls></video>
 		</a>
 		<a class="col-span-2" data-fancybox="gallery-pan" data-src="<?= get_template_directory_uri() . '/assets/img/stands/pan-stand-1.jpg' ?>">
-			<img class="w-full h-full" src="<?= get_template_directory_uri() . '/assets/img/stands/pan-stand-1.jpg' ?>" alt="">
+			<img class="w-full h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/pan-stand-1.jpg' ?>" alt="">
 		</a>
 	</div>
 	<!-- Stand Montero -->
@@ -82,21 +82,21 @@ get_template_part('template-parts/banners/internal', 'page');
 			<p>Nuestro cliente nos pidió un stand en el cual esté inspirado la esencia de su marca, a traves de propuestas alineadas a su branding este fue el resultado.</p>
 		</div>
 	</div>
-	<div class="grid md:grid-cols-10 grid-cols-1 gap-5 place-content-center">
-		<a class="col-span-6 row-span-2" data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-MONTERO.mp4">
+	<div class="grid md:grid-cols-10 grid-cols-2 gap-5 place-content-center md:p-0 p-10">
+		<a class="col-span-6 row-span-2 " data-fancybox="gallery-montero" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-MONTERO.mp4">
 			<video class="w-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-MONTERO.mp4" type="video/mp4" controls></video>
 		</a>
 		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-1.jpg' ?>">
-			<img class="w-full h-72" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-1.jpg' ?>" alt="">
+			<img class="w-full h-72 object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-1.jpg' ?>" alt="">
 		</a>
 		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-2.jpg' ?>">
-			<img class="w-full h-72" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-2.jpg' ?>" alt="">
+			<img class="w-full h-72 object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-2.jpg' ?>" alt="">
 		</a>
 		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-3.jpg' ?>">
-			<img class="w-full h-72 " src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-3.jpg' ?>" alt="">
+			<img class="w-full h-72 object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-3.jpg' ?>" alt="">
 		</a>
 		<a class="col-span-2" data-fancybox="gallery-montero" data-src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-4.jpg' ?>">
-			<img class="w-full h-72 " src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-4.jpg' ?>" alt="">
+			<img class="w-full h-72 object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/montero-stand-4.jpg' ?>" alt="">
 		</a>
 
 
