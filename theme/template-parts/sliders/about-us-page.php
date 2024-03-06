@@ -25,6 +25,6 @@
 			</div>
 		<?php endforeach; ?>
 	</div>
-	<div class="swiper-about-us-button-prev"></div>
-	<div class="swiper-about-us-button-next"></div>
+	<div class="swiper-button-prev about-us"></div>
+	<div class="swiper-button-next about-us"></div>
 </div>

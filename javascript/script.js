@@ -18,10 +18,10 @@ const homeSlider = new Swiper('.home-slider', {
 	autoplay: {
 		delay: 3500,
 	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 })
 
 const customersSlider = new Swiper('.customers-slider', {
@@ -35,21 +35,21 @@ const customersSlider = new Swiper('.customers-slider', {
 	breakpoints: {
 		1024: {
 			slidesPerView: 4,
-			spaceBetween:30,
-		 },
+			spaceBetween: 30,
+		},
 		767: {
-		  slidesPerView: 3,
-		  spaceBetween: 20,
+			slidesPerView: 3,
+			spaceBetween: 20,
 		},
 		425: {
 			slidesPerView: 2,
 			spaceBetween: 20,
-		 },
-	 },
+		},
+	},
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	 },
+	},
 })
 
 const aboutUsSlider = new Swiper('.about-us-slider', {
@@ -61,9 +61,9 @@ const aboutUsSlider = new Swiper('.about-us-slider', {
 		delay: 3500,
 	},
 	navigation: {
-		nextEl: '.swiper-about-us-button-next',
-		prevEl: '.swiper-about-us-button-prev',
-	 },
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 })
 
 const ourValuesSlider = new Swiper('.our-values-slider', {
@@ -74,10 +74,10 @@ const ourValuesSlider = new Swiper('.our-values-slider', {
 	autoplay: {
 		delay: 3500,
 	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	 },
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 })
 
 const awardsSlider = new Swiper('.awards-slider', {
@@ -91,7 +91,7 @@ const awardsSlider = new Swiper('.awards-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	 },
+	},
 })
 
 const testimonialsSlider = new Swiper('.testimonials-slider', {
@@ -105,7 +105,7 @@ const testimonialsSlider = new Swiper('.testimonials-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	 },
+	},
 })
 
 const serviceRightSlider = new Swiper('.service-right-slider', {
@@ -119,7 +119,7 @@ const serviceRightSlider = new Swiper('.service-right-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	 },
+	},
 })
 
 const serviceLeftSlider = new Swiper('.service-right-slider', {
@@ -133,7 +133,7 @@ const serviceLeftSlider = new Swiper('.service-right-slider', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
-	 },
+	},
 })
 
 // const servicespaSlider = new Swiper('.servicespa-slider', {
