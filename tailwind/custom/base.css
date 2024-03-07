@@ -23,11 +23,6 @@ body {
 .current-menu-item {
 	@apply text-sky-blue;
 }
-.swiper-button-prev.customers::after,
-.swiper-button-prev.customers::after,
-{
-	@apply bg-light-gray text-light-gray !important;
-}
 
 /* Swiper */
 .swiper-button-prev::after,
@@ -37,12 +32,37 @@ body {
 
 .swiper-button-prev.about-us,
 .swiper-button-next.about-us {
-	@apply bg-slate-300/90 rounded-full xl:size-12 lg:size-10 md:size-8 size-7 !important;
+	@apply rounded-full xl:size-12 lg:size-10 md:size-8 size-7 !important;
 }
 
 .swiper-button-prev.about-us::after,
 .swiper-button-next.about-us::after {
-	@apply text-gray md:text-xl text-base !important;
+	@apply text-white md:text-4xl text-base !important;
+}
+.swiper-button-prev.customers,
+.swiper-button-next.customers {
+	@apply rounded-full xl:size-12 lg:size-10 md:size-8 size-7 !important;
+}
+.swiper-button-prev.customers::after,
+.swiper-button-next.customers::after
+{
+	@apply text-light-gray !important;
+}
+
+/* Swiper awards */
+.swiper-button-prev.awards-slider::after,
+.swiper-button-next.awards-slider::after {
+	@apply text-light-gray md:text-4xl text-base !important;
+}
+
+.swiper-button-prev.awards-slider,
+.swiper-button-next.awards-slider {
+	@apply rounded-full xl:size-12 lg:size-10 md:size-8 size-7 !important;
+}
+
+.swiper-button-prev.awards-slider::after,
+.swiper-button-next.awards-slider::after {
+	@apply text-light-gray md:text-4xl text-base !important;
 }
 
 .swiper-pagination.home {

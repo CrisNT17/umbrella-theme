@@ -24,7 +24,7 @@
 
 			<?php endforeach; ?>
 		</div>
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev customers"></div>
+	<div class="swiper-button-next customers"></div>
 	</div>
 </div>

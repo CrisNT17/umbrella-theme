@@ -41,9 +41,6 @@ get_template_part('template-parts/banners/internal', 'page')
 					</div>
 
 				</div>
-				<div class="swiper-wrapper "></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
 			</div>
 
 		</div>
@@ -81,6 +78,8 @@ get_template_part('template-parts/banners/internal', 'page')
 			)
 		);
 		get_template_part('template-parts/sliders/awards', 'slider', array('banners' => $sliderAwards)); ?>
+
+
 	</section>
 
 	<?php

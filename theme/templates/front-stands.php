@@ -120,7 +120,9 @@ get_template_part('template-parts/banners/internal', 'page');
 				<span class="text-sky-blue lg:text-5xl text-xl font-cocogoose font-extralight">Creación</span>
 			</div>
 		</div>
+
 	</div>
+
 </section>
 <script>
 	Fancybox.bind('[data-fancybox="gallery-titan"]', {});
