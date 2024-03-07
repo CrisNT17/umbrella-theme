@@ -91,14 +91,11 @@ get_template_part('template-parts/banners/internal', 'page');
 			<span class="xl:text-xl lg:text-lg md:text-lg text-base md:text-end text-center mt-4">Creatividad y estrategia para<br> posicionamiento de tu marca en ferias,<br> exposiciones, eventos, centros<br> comerciales...<br> ¡Y más!</span>
 		</div>
 		<div class="md:order-2 order-1 col-span-6">
-			<?php
-			$sliderServicesCI = array(
-				"banner1" => get_template_directory_uri() . '/assets/img/banners/comunicacion-integral.jpg',
-				"banner2" => get_template_directory_uri() . '/assets/img/banners/comunicacion-integral.jpg',
-			);
-			get_template_part('template-parts/sliders/services', 'right', array('banners' => $sliderServicesCI));
-			?>
+		<img class="size-full mx-auto" src="<?= get_template_directory_uri() . '/assets/img/banners/diseno-stands.jpg' ?>" alt="">
+
+		<button class="font-cocogoose md:text-2xl text-lg font-extralight relative md:translate-x-[40rem] translate-x-72 md:bottom-20  right-5 bottom-20  border-white border-2 rounded-3xl text-white px-3 py-2 z-10 ">Ver más... </button>
 		</div>
+
 	</div>
 	<!-- Rotulación publicitaria -->
 	<div class="grid md:grid-cols-11 grid-cols-1  gap-10 w-full ">
