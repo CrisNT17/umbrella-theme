@@ -122,7 +122,7 @@ const serviceRightSlider = new Swiper('.service-right-slider', {
 	},
 })
 
-const serviceLeftSlider = new Swiper('.service-right-slider', {
+const serviceLeftSlider = new Swiper('.service-left-slider', {
 	slidesPerView: 1,
 	spaceBetween: 0,
 	loop: true,
