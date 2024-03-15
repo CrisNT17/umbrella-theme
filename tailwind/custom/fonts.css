@@ -10,7 +10,7 @@
 	/* cocogoose-pro.light.ttf */
 	@font-face {
 		font-family: 'CocoGooseProLight';
-		src: url('./umbrella/assets/fonts/cocogoose-pro.light.ttf') format('truetype');
+		src: url('./theme/assets/fonts/cocogoose-pro.light.ttf') format('truetype');
 		font-weight: 300;
 		font-style: normal;
 	}
@@ -18,7 +18,7 @@
 	/* cocogoose-pro.regular.ttf */
 	@font-face {
 		font-family: 'CocoGooseProRegular';
-		src: url('../umbrella/assets/fonts/cocogoose-pro.regular.ttf') format('truetype');
+		src: url('../theme/assets/fonts/cocogoose-pro.regular.ttf') format('truetype');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -26,7 +26,7 @@
 	/* cocogoose-pro.semilight.ttf */
 	@font-face {
 		font-family: 'CocoGooseProSemilight';
-		src: url('.../umbrella/assets/fonts/cocogoose-pro.semilight.ttf') format('truetype');
+		src: url('.../theme/assets/fonts/cocogoose-pro.semilight.ttf') format('truetype');
 		font-weight: 300;
 		font-style: normal;
 	}
@@ -34,7 +34,7 @@
 	/* museo-sans-300.otf */
 	@font-face {
 		font-family: 'MuseoSans300';
-		src: url('../umbrella/assets/fonts/museo-sans-300.otf') format('opentype');
+		src: url('../theme/assets/fonts/museo-sans-300.otf') format('opentype');
 		font-weight: 300;
 		font-style: normal;
 	}
@@ -42,7 +42,7 @@
 	/* museo-sans-500.otf */
 	@font-face {
 		font-family: 'MuseoSans500';
-		src: url('../umbrella/assets/fonts/museo-sans-500.otf') format('opentype');
+		src: url('../theme/assets/fonts/museo-sans-500.otf') format('opentype');
 		font-weight: 500;
 		font-style: normal;
 	}
@@ -50,7 +50,7 @@
 	/* museo-sans-700.otf */
 	@font-face {
 		font-family: 'MuseoSans700';
-		src: url('../umbrella/assets/fonts/museo-sans-700.otf') format('opentype');
+		src: url('../theme/assets/fonts/museo-sans-700.otf') format('opentype');
 		font-weight: 700;
 		font-style: normal;
 	}
@@ -58,7 +58,7 @@
 	/* museo-sans-900.otf */
 	@font-face {
 		font-family: 'MuseoSans900';
-		src: url('../umbrella/assets/fonts/museo-sans-900.otf') format('opentype');
+		src: url('../theme/assets/fonts/museo-sans-900.otf') format('opentype');
 		font-weight: 900;
 		font-style: normal;
 	}
@@ -66,7 +66,7 @@
 	/* myriadopro-regular.otf */
 	@font-face {
 		font-family: 'MyriadProRegular';
-		src: url('../umbrella/assets/fonts/myriadopro-regular.otf') format('opentype');
+		src: url('../theme/assets/fonts/myriadopro-regular.otf') format('opentype');
 		font-weight: normal;
 		font-style: normal;
 	}

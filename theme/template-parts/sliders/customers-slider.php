@@ -7,6 +7,14 @@
  *
  * @package Umbrella
  */
+$args = array(
+	'post_type'      => 'customers',
+	'posts_per_page' => -1,
+	'order' 		  => 'DESC',
+
+);
+
+$query = new WP_Query($args);
 
 ?>
 <div class="container md:my-20 my-10">
@@ -15,14 +23,20 @@
 	<div class="customers-slider px-10 box-content relative overflow-hidden">
 		<div class="swiper-wrapper">
 			<!-- Slides -->
-			<?php foreach ($args['banners'] as $banner) :?>
-				<div class="swiper-slide">
-					<div class="lg:h-40 md:h-36 h-28 w-full flex justify-center items-center">
-						<img class="lg:max-h-36 md:max-h-28 max-h-20 mx-auto" src="<?= $banner['image']; ?>" alt="">
-					</div>
-				</div>
-
-			<?php endforeach; ?>
+			<?php
+					if ($query->have_posts()) :
+						while ($query->have_posts()) :
+							$query->the_post();
+							$image = umbrella_get_image_data(get_field('logo')); ?>
+							<div class="swiper-slide w-96">
+								<img class="w-80 h-28 object-contain object-center" src="<?= $image['url']; ?>" alt="<?= $image['name']; ?>" srcset="<?= $image['srcset']; ?>">
+							</div>
+					<?php
+						endwhile;
+						// Restablecer la consulta
+						wp_reset_query();
+					endif;
+					?>
 		</div>
 		<div class="swiper-button-prev customers"></div>
 	<div class="swiper-button-next customers"></div>

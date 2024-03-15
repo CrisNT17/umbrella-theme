@@ -125,43 +125,9 @@ get_template_part('template-parts/sliders/home', 'page', array('banners' => $sli
 </section>
 
 <?php
-$customers = array(
-	"customer1" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/nutricia.png',
-	),
-	"customer2" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/sanofi.png',
-	),
-	"customer3" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/bristal-myers.png',
-	),
-	"customer4" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/cnt.png',
-	),
-	"customer5" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/novartis.png',
-	),
-	"customer6" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/qroma.png',
-	),
-	"customer7" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/sima.png',
-	),
-	"customer8" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/recalcine.png',
-	),
-	"customer9" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/stendhal.png',
-	),
-	"customer10" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/mayekawa.png',
-	),
-	"customer11" => array(
-		'image' => get_template_directory_uri() . '/assets/img/logos/customers/habitat-iii.png',
-	)
-);
+
 // Customers
-get_template_part('template-parts/sliders/customers', 'slider', array('banners' => $customers));
+get_template_part('template-parts/sliders/customers', 'slider', );
 ?>
 <!-- Projects -->
 <section class="w-full overflow-hidden xl:py-20 py-10 bg-cover bg-center" style="background-image: url('<?= get_template_directory_uri() . '/assets/img/backgrounds/bg-proyectos.jpg' ?>');">

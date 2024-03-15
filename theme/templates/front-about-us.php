@@ -24,6 +24,10 @@ get_template_part('template-parts/banners/internal', 'page');
 	</h2>
 </div>
 <?php
+
+get_template_part('template-parts/sliders/about','us', 'page', );
+?>
+<?php
 $sliderAboutUs = array(
 	"banner1" => array(
 		'image' => get_template_directory_uri() . '/assets/img/banners/banner-nosotros-1.jpg',
