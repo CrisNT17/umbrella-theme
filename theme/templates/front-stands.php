@@ -13,6 +13,14 @@
  *
  * @package Umbrella
  */
+$args = array(
+	'post_type'      => 'stands',
+	'posts_per_page' => -1,
+	'order' 		  => 'DESC',
+
+);
+
+$query = new WP_Query($args);
 
 get_header();
 
@@ -31,28 +39,112 @@ get_template_part('template-parts/banners/internal', 'page');
 		</div>
 	</div>
 	<!-- Stand Titan -->
-	<div class="grid md:grid-cols-2 grid-cols-1 place-content-center">
-		<div class="flex justify-center items-center p-10">
-			<img class="w-full my-10" src="<?= get_template_directory_uri() . '/assets/img/logos/titan-logo.jpg' ?>" alt="">
+	<div class="grid md:grid-cols-2 grid-cols-1 place-content-center p-10">
+		<div class="flex justify-center items-center  ">
+			<!-- Slides -->
+			<?php if ($query->have_posts()) :
+				while ($query->have_posts()) :
+					$query->the_post();
+					$image = umbrella_get_image_data(get_field('logo')); ?>
+					<div class="swiper-slide w-full  bg-contain bg-center " style="background-image: url(<?= $image['url'] ?>);">
+
+					</div>
+
+			<?php
+				endwhile;
+				// Restablecer la consulta
+				wp_reset_query();
+			endif; ?>
+
+
 		</div>
-		<div class="flex items-center justify-center xl:text-3xl lg:text-2xl md:text-xl text-lg text-center md:my-20 my-10 font-museo font-light">
-			<p>Nuestro cliente nos pidió un stand en el cual esté inspirado la esencia de su marca, a traves de propuestas alineadas a su branding este fue el resultado.</p>
+
+		<div class="container flex justify-center items-center  text-black ">
+			<div class="lg:w-full w-full">
+				<div class="flex items-center justify-center xl:text-3xl lg:text-2xl md:text-xl text-lg text-center  font-museo font-light">
+					<?php if ($query->have_posts()) :
+						while ($query->have_posts()) :
+							$query->the_post();
+					?>
+							<div class="md:text-2xl text-sm py-5  pr-11 text-center justify-center font-black"><?= get_field('description') ?></div>
+				</div>
+
+		<?php
+						endwhile;
+						// Restablecer la consulta
+						wp_reset_query();
+					endif; ?>
+
+			</div>
 		</div>
 	</div>
-	<div class="grid md:grid-cols-5 grid-cols-2 md:gap-x-10 md:gap-y-5 gap-x-2 gap-y-2 place-content-center my-10  md:p-0 p-5">
-		<a class="md:col-span-3 col-span-2" data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4">
-			<video class="w-full h-full  object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Diseno-TITAN.mp4" type="video/mp4" controls></video>
-		</a>
-		<a class="md:col-span-2 col-span-1 md:row-span-2 row-span-1" data-fancybox="gallery-titan" data-src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4">
-			<video class="w-full md:h-full h-full object-cover object-center" src="http://umbsolut.com/wp-content/uploads/2024/03/Stand-TITAN.mp4" type="video/mp4" controls></video>
-		</a>
-		<a class="md:col-span-3 col-span-1" data-fancybox="gallery-titan" data-src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>">
-			<img class="w-full md:h-96  h-full object-cover object-center" src="<?= get_template_directory_uri() . '/assets/img/stands/titan-stand-1.jpg' ?>" alt="">
-		</a>
 
+	<div class="grid md:grid-cols-4 grid-cols-2 md:gap-x-10 md:gap-y-5 gap-x-2 gap-y-2 place-content-center my-10 md:p-0 p-5 border-4">
+		<?php if ($query->have_posts()) :
+			while ($query->have_posts()) :
+				$query->the_post();
+				$images = get_field('gallery');
 
+				// Verifica si hay imágenes en la galería
+				if ($images) :
+					$first_image = $images[0]; // Obtiene la primera imagen de la galería
+					$banner = umbrella_get_image_data($first_image['id']);
+		?>
+					<div class="md:col-span-2 col-span-1 md:row-span-2 row-span-1">
+						<a href="<?php echo esc_url($banner['url']); ?>">
+							<img class="w-full h-96 object-cover object-center" src="<?= $banner['url']; ?>" alt="<?= $banner['name']; ?>" srcset="<?= $banner['srcset']; ?>">
+						</a>
+					</div>
+				<?php endif; ?>
 
+		<?php endwhile;
+			// Restablecer la consulta
+			wp_reset_query();
+		endif; ?>
+		<?php if ($query->have_posts()) :
+			while ($query->have_posts()) :
+				$query->the_post();
+				$images = get_field('gallery');
+
+				// Verifica si hay imágenes en la galería
+				if ($images) :
+					$first_image = $images[1]; // Obtiene la primera imagen de la galería
+					$banner = umbrella_get_image_data($first_image['id']);
+		?>
+					<div class="md:col-span-2 col-span-1 md:row-span-2 row-span-1">
+						<a href="<?php echo esc_url($banner['url']); ?>">
+							<img class="w-full h-96 object-cover object-center" src="<?= $banner['url']; ?>" alt="<?= $banner['name']; ?>" srcset="<?= $banner['srcset']; ?>">
+						</a>
+					</div>
+				<?php endif; ?>
+
+		<?php endwhile;
+			// Restablecer la consulta
+			wp_reset_query();
+		endif; ?>
+		<?php if ($query->have_posts()) :
+			while ($query->have_posts()) :
+				$query->the_post();
+				$images = get_field('gallery');
+
+				// Verifica si hay imágenes en la galería
+				if ($images) :
+					$first_image = $images[2]; // Obtiene la primera imagen de la galería
+					$banner = umbrella_get_image_data($first_image['id']);
+		?>
+					<div class="md:col-span-3 col-span-1">
+						<a href="<?php echo esc_url($banner['url']); ?>">
+							<img class="w-full h-96 object-cover object-center" src="<?= $banner['url']; ?>" alt="<?= $banner['name']; ?>" srcset="<?= $banner['srcset']; ?>">
+						</a>
+					</div>
+				<?php endif; ?>
+
+		<?php endwhile;
+			// Restablecer la consulta
+			wp_reset_query();
+		endif; ?>
 	</div>
+
 	<!-- Stand Pan -->
 	<div class="grid md:grid-cols-2 grid-cols-1 place-content-center">
 		<div class="flex justify-center items-center p-10">
